@@ -7,7 +7,7 @@ from bot_create import bot
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from datetime import datetime
 
-admin_ids = [930143697, 580245280]
+admin_ids = [930143697, 580245280, 1089210807, 362841815]
 
 
 async def admin_panel(message: types.Message):
