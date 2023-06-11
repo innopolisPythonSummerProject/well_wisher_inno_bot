@@ -14,7 +14,6 @@ async def admin_panel(message: types.Message):
     log(message)
     if message.from_user.id not in admin_ids:
         await bot.send_message(message.from_user.id, 'You don`t have enough permissions to access the admin panel.')
-
         return
 
     await bot.send_message(message.from_user.id, 'Welcome to the admin panel!')
