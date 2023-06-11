@@ -1,0 +1,6 @@
+17:18:47 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+17:18:47 aiogram WARNING Updates were skipped successfully.
+17:18:47 root INFO Bot is starting...
+17:18:47 aiogram.dispatcher.dispatcher INFO Start polling.
+17:18:59 aiogram.dispatcher.dispatcher INFO Stop polling...
+17:18:59 aiogram WARNING Goodbye!
