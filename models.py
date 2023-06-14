@@ -10,5 +10,5 @@ class ChatTable:
         metadata = MetaData()
         self.table = Table(self.table_name, metadata,
                            Column('data', String(255)),
-                           Column('is_birthday', Boolean, default=False),
-                           Column('date', DATE, default=func.current_date()))
+                           Column('is_birthday', String(255), default=False),
+                           Column('date', String(255)))
