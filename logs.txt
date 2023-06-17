@@ -3816,3 +3816,92 @@ AttributeError: can't set attribute
 22:32:56 aiogram.dispatcher.dispatcher INFO Start polling.
 22:38:40 aiogram.dispatcher.dispatcher INFO Stop polling...
 22:38:40 aiogram WARNING Goodbye!
+22:58:51 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+22:58:51 aiogram WARNING Updates were skipped successfully.
+22:58:51 root INFO Bot is starting...
+22:58:51 aiogram.dispatcher.dispatcher INFO Start polling.
+22:59:53 aiogram.dispatcher.dispatcher INFO Stop polling...
+22:59:53 aiogram WARNING Goodbye!
+22:59:55 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+22:59:55 aiogram WARNING Updates were skipped successfully.
+22:59:55 root INFO Bot is starting...
+22:59:55 aiogram.dispatcher.dispatcher INFO Start polling.
+22:59:59 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'NoneType' object has no attribute 'strftime'")>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\main_logic.py", line 70, in process_simple_calendar
+    date_str = date.strftime("%d/%m")
+AttributeError: 'NoneType' object has no attribute 'strftime'
+23:00:48 aiogram.dispatcher.dispatcher INFO Stop polling...
+23:00:48 aiogram WARNING Goodbye!
+23:00:49 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+23:00:50 aiogram WARNING Updates were skipped successfully.
+23:00:50 root INFO Bot is starting...
+23:00:50 aiogram.dispatcher.dispatcher INFO Start polling.
+23:02:28 aiogram.dispatcher.dispatcher INFO Stop polling...
+23:02:28 aiogram WARNING Goodbye!
+23:02:29 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+23:02:29 aiogram WARNING Updates were skipped successfully.
+23:02:29 root INFO Bot is starting...
+23:02:29 aiogram.dispatcher.dispatcher INFO Start polling.
+23:23:02 aiogram.dispatcher.dispatcher INFO Stop polling...
+23:23:02 aiogram WARNING Goodbye!
+23:23:05 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+23:23:05 aiogram WARNING Updates were skipped successfully.
+23:23:05 root INFO Bot is starting...
+23:23:05 aiogram.dispatcher.dispatcher INFO Start polling.
+23:23:11 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError('user_id')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1623, in __getattr__
+    return self._index[key][1]
+KeyError: 'user_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\main_logic.py", line 65, in delete_birthday
+    delete_query = table.delete().where(table.c.user_id == message.from_user.id)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1625, in __getattr__
+    raise AttributeError(key) from err
+AttributeError: user_id
+23:23:23 aiogram.dispatcher.dispatcher INFO Stop polling...
+23:23:23 aiogram WARNING Goodbye!
+23:23:25 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+23:23:26 aiogram WARNING Updates were skipped successfully.
+23:23:26 root INFO Bot is starting...
+23:23:26 aiogram.dispatcher.dispatcher INFO Start polling.
+23:24:37 aiogram.dispatcher.dispatcher INFO Stop polling...
+23:24:37 aiogram WARNING Goodbye!
+23:24:39 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+23:24:40 aiogram WARNING Updates were skipped successfully.
+23:24:40 root INFO Bot is starting...
+23:24:40 aiogram.dispatcher.dispatcher INFO Start polling.
+23:29:49 aiogram.dispatcher.dispatcher INFO Stop polling...
+23:29:49 aiogram WARNING Goodbye!
+11:54:04 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+11:54:05 aiogram WARNING Updates were skipped successfully.
+11:54:05 root INFO Bot is starting...
+11:54:05 aiogram.dispatcher.dispatcher INFO Start polling.
+11:57:22 aiogram.dispatcher.dispatcher INFO Stop polling...
+11:57:22 aiogram WARNING Goodbye!

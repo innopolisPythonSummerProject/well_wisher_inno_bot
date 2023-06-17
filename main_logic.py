@@ -41,7 +41,7 @@ async def start_handler(message: types.Message):
     await message.reply('Bot is ready to work!')
 
 
-async def add_my_birthday(message: types.Message):
+async def add_birthday(message: types.Message):
     chat_id = message.chat.id
 
     table_name = f"table_{chat_id}"
@@ -51,6 +51,40 @@ async def add_my_birthday(message: types.Message):
 
     await message.answer("Please select a date: ", reply_markup=await SimpleCalendar().start_calendar())
 
+async def delete_birthday(message: types.Message):
+    chat_id = message.chat.id
+
+    table_name = f"table_{chat_id}"
+    table = Table(table_name, metadata, autoload_with=engine)
+
+    select_query = table.select().where(table.c.data == message.from_user.id)
+    result = session.execute(select_query).fetchone()
+
+    if result:
+        await message.answer('Your birthday was successfully deleted')
+        # Запись с заданным user.id найдена
+        delete_query = table.delete().where(table.c.data == message.from_user.id)
+
+        # Выполните запрос на удаление записи
+        session.execute(delete_query)
+        session.commit()
+    else:
+        await message.answer('Sorry, but there is no information about your birthday')
+
+# async def get_birthday(message: types.Message):
+#     chat_id = message.chat.id
+#
+#     table_name = f"table_{chat_id}"
+#     table = Table(table_name, metadata, autoload_with=engine)
+#
+#     select_query = table.select().where(table.c.data == message.from_user.id)
+#     result = session.execute(select_query).fetchone()
+#
+#     if result:
+#         await message.answer('')
+#     else:
+#         await message.answer('Sorry, but there is no information about your birthday')
+#
 
 # simple calendar usage
 @dp.callback_query_handler(simple_cal_callback.filter())
@@ -58,7 +92,7 @@ async def process_simple_calendar(callback_query: CallbackQuery, callback_data: 
     selected, date = await SimpleCalendar().process_selection(callback_query, callback_data)
     user = callback_query.from_user
     date_str = date.strftime("%d/%m")
-    print(date_str)
+    # print(date_str)
     chat_id = callback_query.message.chat.id
 
     if selected:
@@ -94,4 +128,6 @@ async def process_simple_calendar(callback_query: CallbackQuery, callback_data: 
 def register_handlers(dp: Dispatcher):
     dp.register_message_handler(admin_panel, commands='settings')
     dp.register_message_handler(start_handler, commands='start')
-    dp.register_message_handler(add_my_birthday, commands='add_my_birthday')
+    dp.register_message_handler(add_birthday, commands='add_birthday')
+    dp.register_message_handler(delete_birthday, commands='delete_birthday')
+    # dp.register_message_handler(get_birthday, commands='get_birthday')
