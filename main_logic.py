@@ -24,13 +24,22 @@ from sqlalchemy.engine import reflection
 
 
 
-async def admin_panel(message: types.Message):
-    if message.from_user.id not in admin_ids:
-        await bot.send_message(message.from_user.id, 'You don`t have enough permissions to access the admin panel.')
-        return
+# async def admin_panel(message: types.Message):
+#     if message.from_user.id not in admin_ids:
+#         await bot.send_message(message.from_user.id, 'You don`t have enough permissions to access the admin panel.')
+#         return
+#
+#     await bot.send_message(message.from_user.id, 'Welcome to the admin panel!')
 
-    await bot.send_message(message.from_user.id, 'Welcome to the admin panel!')
-
+async def get_user_data(user_id):
+    user = await bot.get_chat(user_id)
+    user_data = {
+        'id': user.id,
+        'first_name': user.first_name,
+        'last_name': user.last_name,
+        'username': user.username,
+    }
+    return user_data
 
 async def start_handler(message: types.Message):
     # Получаем идентификатор чата
@@ -88,6 +97,117 @@ async def delete_birthday(message: types.Message):
 #     else:
 #         await message.answer('Sorry, but there is no information about your birthday')
 #
+
+
+async def get_all_birthdays(message: types.Message):
+    chat_id = message.chat.id
+
+    table_name = f"table_{chat_id}"
+    table = Table(table_name, metadata, autoload_with=engine)
+
+    select_query = table.select().where(table.c.is_birthday == 1)
+    results = session.execute(select_query).fetchall()
+
+    answer_data = ''
+    for row in results:
+        user_data = await get_user_data(row[0])
+        correct_date = str(row[2]).split()[0].split('-')
+        answer_data+=f'@{user_data["username"]} {correct_date[2]}.{correct_date[1]}\n'
+
+    await message.answer(
+        answer_data,
+    )
+
+
+async def get_all_holidays(message: types.Message):
+    chat_id = message.chat.id
+
+    table_name = f"table_{chat_id}"
+    table = Table(table_name, metadata, autoload_with=engine)
+
+    select_query = table.select().where(table.c.is_birthday == 0)
+    results = session.execute(select_query).fetchall()
+
+    answer_data = ''
+    for row in results:
+        correct_date = str(row[2]).split()[0].split('-')
+        answer_data+=f'{row[0]} {correct_date[2]}.{correct_date[1]}\n'
+
+    await message.answer(
+        answer_data,
+    )
+
+
+async def get_birthday(message: types.Message):
+    data_from_user = message.text.split(" ")
+    print(data_from_user)
+    entered_username = " ".join(data_from_user[1:]).strip()
+
+    if not entered_username:
+        await message.answer(
+            f'Please, enter /get_birthday username of a person',
+        )
+
+    else:
+        chat_id = message.chat.id
+
+        table_name = f"table_{chat_id}"
+        table = Table(table_name, metadata, autoload_with=engine)
+
+        select_query = table.select().where(table.c.is_birthday == 1)
+        results = session.execute(select_query).fetchall()
+
+        user_found = False
+        for row in results:
+            user_data = await get_user_data(row[0])
+            if user_data['username'] == entered_username:
+                user_found = True
+                correct_date = str(row[2]).split()[0].split('-')
+
+                await message.answer(
+                    f'{correct_date[2]}.{correct_date[1]}',
+                )
+                break
+
+        if not user_found:
+            await message.answer(
+                f'There is no information about birthday of this person',
+            )
+
+async def get_holiday(message: types.Message):
+    data_from_user = message.text.split(" ")
+    print(data_from_user)
+    entered_holiday = " ".join(data_from_user[1:]).strip()
+
+    if not entered_holiday:
+        await message.answer(
+            f'Please, enter /get_birthday name of a holiday',
+        )
+
+    else:
+        chat_id = message.chat.id
+
+        table_name = f"table_{chat_id}"
+        table = Table(table_name, metadata, autoload_with=engine)
+
+        select_query = table.select().where(table.c.is_birthday == 0)
+        results = session.execute(select_query).fetchall()
+
+        hd_found = False
+        for row in results:
+            if row[0] == entered_holiday:
+                hd_found = True
+                correct_date = str(row[2]).split()[0].split('-')
+
+                await message.answer(
+                    f'{correct_date[2]}.{correct_date[1]}',
+                )
+                break
+
+        if not hd_found:
+            await message.answer(
+                f'There is no information about this holiday',
+            )
 
 async def add_holiday(message: types.Message):
     data_from_user = message.text.split(" ")
@@ -198,10 +318,13 @@ async def add_holiday_to_db(chat_id, holiday_name, callback_query, date):
 
 
 def register_handlers(dp: Dispatcher):
-    dp.register_message_handler(admin_panel, commands='settings')
+    # dp.register_message_handler(admin_panel, commands='settings')
     dp.register_message_handler(start_handler, commands='start')
     dp.register_message_handler(add_birthday, commands='add_birthday')
-    dp.register_message_handler(delete_birthday, commands='delete_birthday')
-    # dp.register_message_handler(get_birthday, commands='get_birthday')
     dp.register_message_handler(add_holiday, commands='add_holiday')
+    dp.register_message_handler(delete_birthday, commands='delete_birthday')
     dp.register_message_handler(delete_holiday, commands='delete_holiday')
+    dp.register_message_handler(get_all_birthdays, commands='get_all_birthdays')
+    dp.register_message_handler(get_all_holidays, commands='get_all_holidays')
+    dp.register_message_handler(get_birthday, commands='get_birthday')
+    dp.register_message_handler(get_holiday, commands='get_holiday')

@@ -4413,3 +4413,147 @@ asyncio.exceptions.TimeoutError
 23:32:47 aiogram WARNING Updates were skipped successfully.
 23:32:47 root INFO Bot is starting...
 23:32:47 aiogram.dispatcher.dispatcher INFO Start polling.
+10:06:37 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:06:37 aiogram WARNING Updates were skipped successfully.
+10:06:37 root INFO Bot is starting...
+10:06:37 aiogram.dispatcher.dispatcher INFO Start polling.
+10:22:19 aiogram.dispatcher.dispatcher INFO Stop polling...
+10:22:19 aiogram WARNING Goodbye!
+10:22:22 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:22:22 aiogram WARNING Updates were skipped successfully.
+10:22:22 root INFO Bot is starting...
+10:22:22 aiogram.dispatcher.dispatcher INFO Start polling.
+10:36:11 aiogram.dispatcher.dispatcher INFO Stop polling...
+10:36:11 aiogram WARNING Goodbye!
+10:36:14 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:36:14 aiogram WARNING Updates were skipped successfully.
+10:36:14 root INFO Bot is starting...
+10:36:14 aiogram.dispatcher.dispatcher INFO Start polling.
+10:37:04 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-44' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageNotModified('Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\main_logic.py", line 156, in process_simple_calendar
+    selected, date = await SimpleCalendar().process_selection(callback_query, callback_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram_calendar\simple_calendar.py", line 87, in process_selection
+    await query.message.delete_reply_markup()   # removing inline keyboard
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\types\message.py", line 3027, in delete_reply_markup
+    return await self.bot.edit_message_reply_markup(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\bot.py", line 3252, in edit_message_reply_markup
+    result = await self.request(api.Methods.EDIT_MESSAGE_REPLY_MARKUP, payload)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageNotModified: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+10:44:03 aiogram.dispatcher.dispatcher INFO Stop polling...
+10:44:03 aiogram WARNING Goodbye!
+10:44:06 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:44:06 aiogram WARNING Updates were skipped successfully.
+10:44:06 root INFO Bot is starting...
+10:44:06 aiogram.dispatcher.dispatcher INFO Start polling.
+10:48:28 aiogram.dispatcher.dispatcher INFO Stop polling...
+10:48:28 aiogram WARNING Goodbye!
+10:48:30 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:48:31 aiogram WARNING Updates were skipped successfully.
+10:48:31 root INFO Bot is starting...
+10:48:31 aiogram.dispatcher.dispatcher INFO Start polling.
+10:48:35 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'Chat' object has no attribute 'is_bot'")>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\main_logic.py", line 114, in get_all_birthdays
+    user_data = await get_user_data(row[0])
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\main_logic.py", line 41, in get_user_data
+    'is_bot': user.is_bot,
+AttributeError: 'Chat' object has no attribute 'is_bot'
+10:48:51 aiogram.dispatcher.dispatcher INFO Stop polling...
+10:48:51 aiogram WARNING Goodbye!
+10:48:54 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:48:54 aiogram WARNING Updates were skipped successfully.
+10:48:54 root INFO Bot is starting...
+10:48:54 aiogram.dispatcher.dispatcher INFO Start polling.
+10:57:35 aiogram.dispatcher.dispatcher INFO Stop polling...
+10:57:35 aiogram WARNING Goodbye!
+10:57:37 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:57:38 aiogram WARNING Updates were skipped successfully.
+10:57:38 root INFO Bot is starting...
+10:57:38 aiogram.dispatcher.dispatcher INFO Start polling.
+11:05:03 aiogram.dispatcher.dispatcher INFO Stop polling...
+11:05:03 aiogram WARNING Goodbye!
+11:05:05 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+11:05:06 aiogram WARNING Updates were skipped successfully.
+11:05:06 root INFO Bot is starting...
+11:05:06 aiogram.dispatcher.dispatcher INFO Start polling.
+11:05:21 aiogram.dispatcher.dispatcher INFO Stop polling...
+11:05:21 aiogram WARNING Goodbye!
+11:05:24 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+11:05:24 aiogram WARNING Updates were skipped successfully.
+11:05:24 root INFO Bot is starting...
+11:05:24 aiogram.dispatcher.dispatcher INFO Start polling.
+11:06:04 aiogram.dispatcher.dispatcher INFO Stop polling...
+11:06:04 aiogram WARNING Goodbye!
+11:06:07 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+11:06:07 aiogram WARNING Updates were skipped successfully.
+11:06:07 root INFO Bot is starting...
+11:06:07 aiogram.dispatcher.dispatcher INFO Start polling.
+11:06:19 aiogram.dispatcher.dispatcher INFO Stop polling...
+11:06:19 aiogram WARNING Goodbye!
+11:06:21 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+11:06:21 aiogram WARNING Updates were skipped successfully.
+11:06:21 root INFO Bot is starting...
+11:06:21 aiogram.dispatcher.dispatcher INFO Start polling.
+11:10:22 aiogram.dispatcher.dispatcher INFO Stop polling...
+11:10:22 aiogram WARNING Goodbye!
+11:10:24 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+11:10:24 aiogram WARNING Updates were skipped successfully.
+11:10:24 root INFO Bot is starting...
+11:10:24 aiogram.dispatcher.dispatcher INFO Start polling.
+11:52:58 aiogram.dispatcher.dispatcher INFO Stop polling...
+11:52:58 aiogram WARNING Goodbye!
+11:53:00 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+11:53:00 aiogram WARNING Updates were skipped successfully.
+11:53:00 root INFO Bot is starting...
+11:53:00 aiogram.dispatcher.dispatcher INFO Start polling.
+12:08:19 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:08:19 aiogram WARNING Goodbye!
+12:08:21 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:08:21 aiogram WARNING Updates were skipped successfully.
+12:08:21 root INFO Bot is starting...
+12:08:21 aiogram.dispatcher.dispatcher INFO Start polling.
+12:10:24 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:10:24 aiogram WARNING Goodbye!
+12:10:26 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:10:26 aiogram WARNING Updates were skipped successfully.
+12:10:26 root INFO Bot is starting...
+12:10:26 aiogram.dispatcher.dispatcher INFO Start polling.
+12:10:50 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:10:50 aiogram WARNING Goodbye!
+12:10:52 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:10:52 aiogram WARNING Updates were skipped successfully.
+12:10:52 root INFO Bot is starting...
+12:10:52 aiogram.dispatcher.dispatcher INFO Start polling.
+12:13:40 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:13:40 aiogram WARNING Goodbye!
