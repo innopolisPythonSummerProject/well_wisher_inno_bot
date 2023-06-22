@@ -15,3 +15,9 @@ class ChatTable:
             Column("is_birthday", String(255), default=False),
             Column("date", String(255)),
         )
+
+
+class Holiday:
+    def __init__(self):
+        self.is_birthday = False
+        self.holiday_name = ""

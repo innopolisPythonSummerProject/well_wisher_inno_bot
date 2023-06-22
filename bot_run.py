@@ -2,26 +2,20 @@ import logging
 
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.utils import executor
+
+from app.set_bot_commands import set_default_commands
+from bot_create import dp
 from app import main_logic
-from aiogram import Bot
-from aiogram.dispatcher import Dispatcher
-
-import os
-from dotenv import load_dotenv, find_dotenv
-
-load_dotenv(find_dotenv())
-
-bot = Bot(os.getenv("TOKEN"))
-dp = Dispatcher(bot)
 
 
-async def on_startup(_):
+async def on_startup(dp):
     logging.info("Bot is starting...")
+    await set_default_commands(dp)
 
 
 if __name__ == "__main__":
     logging.basicConfig(
-        filename="middleware/logs.txt",
+        filename="logs.txt",
         format="%(asctime)s %(name)s %(levelname)s %(message)s",
         datefmt="%H:%M:%S",
         level=logging.INFO,

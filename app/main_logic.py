@@ -3,18 +3,14 @@ from app.models import ChatTable
 from sqlalchemy import create_engine, MetaData, Table
 from sqlalchemy.orm import sessionmaker
 
-from aiogram_calendar import (
-    simple_cal_callback,
-    SimpleCalendar,
-    dialog_cal_callback,
-    DialogCalendar,
-)
-from aiogram.types import Message, CallbackQuery, ReplyKeyboardMarkup
-from aiogram.dispatcher.filters import Text
-from bot_run import dp
+# from app.commands import set_default_commands
 
-from bot_run import bot
-from app.holiday_parameters import Holiday
+from aiogram_calendar import simple_cal_callback, SimpleCalendar
+from aiogram.types import CallbackQuery
+from bot_create import dp
+
+from bot_create import bot
+from app.models import Holiday
 
 admin_ids = [930143697, 580245280, 1089210807, 362841815]
 
@@ -23,9 +19,6 @@ metadata = MetaData()
 Session = sessionmaker(bind=engine)
 session = Session()
 holiday = Holiday()
-
-from sqlalchemy import create_engine
-from sqlalchemy.engine import reflection
 
 
 # async def admin_panel(message: types.Message):

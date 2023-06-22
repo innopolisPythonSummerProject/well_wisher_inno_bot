@@ -1,7 +1,9 @@
 from browser import document, html, window
 
+
 # main doby
 main = html.DIV(id="main")
+
 
 # Picture part
 # header
@@ -86,6 +88,7 @@ image.bind("error", handle_image_error)
 container <= image
 main <= container
 
+
 # New picture bottum
 # Variable to track button click state
 button_clicked = False
@@ -164,6 +167,7 @@ div.innerHTML = svg_code
 picture_button <= div
 main <= picture_button
 
+
 # Text part
 
 text_title_container = html.DIV(Class="headers", id="secondHeader")
@@ -185,7 +189,6 @@ div = html.DIV()
 div.innerHTML = svg_code
 text_button <= div
 main <= text_button
-
 
 # Wish button
 
