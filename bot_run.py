@@ -2,19 +2,24 @@ import logging
 
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.utils import executor
+
+from app.set_bot_commands import set_default_commands
 from bot_create import dp
-import main_logic
+from app import main_logic
 
 
-async def on_startup(_):
-    logging.info('Bot is starting...')
+async def on_startup(dp):
+    logging.info("Bot is starting...")
+    await set_default_commands(dp)
 
 
-if __name__ == '__main__':
-    logging.basicConfig(filename="logs.txt",
-                        format='%(asctime)s %(name)s %(levelname)s %(message)s',
-                        datefmt='%H:%M:%S',
-                        level=logging.INFO)
+if __name__ == "__main__":
+    logging.basicConfig(
+        filename="logs.txt",
+        format="%(asctime)s %(name)s %(levelname)s %(message)s",
+        datefmt="%H:%M:%S",
+        level=logging.INFO,
+    )
     logging.getLogger().addHandler(logging.StreamHandler())
     storage = MemoryStorage()
     main_logic.register_handlers(dp)

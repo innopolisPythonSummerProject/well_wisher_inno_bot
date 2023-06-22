@@ -4557,3 +4557,251 @@ AttributeError: 'Chat' object has no attribute 'is_bot'
 12:10:52 aiogram.dispatcher.dispatcher INFO Start polling.
 12:13:40 aiogram.dispatcher.dispatcher INFO Stop polling...
 12:13:40 aiogram WARNING Goodbye!
+21:14:36 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:14:37 aiogram WARNING Updates were skipped successfully.
+21:14:37 root INFO Bot is starting...
+21:14:37 aiogram.dispatcher.dispatcher INFO Start polling.
+21:14:56 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:14:56 aiogram WARNING Goodbye!
+21:16:55 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:16:55 aiogram WARNING Updates were skipped successfully.
+21:16:55 root INFO Bot is starting...
+21:16:55 aiogram.dispatcher.dispatcher INFO Start polling.
+21:18:36 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:18:36 aiogram WARNING Goodbye!
+21:18:59 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:19:00 aiogram WARNING Updates were skipped successfully.
+21:19:00 root INFO Bot is starting...
+21:19:00 aiogram.dispatcher.dispatcher INFO Start polling.
+21:19:24 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:19:24 aiogram WARNING Goodbye!
+21:19:26 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:19:26 aiogram WARNING Updates were skipped successfully.
+21:19:26 root INFO Bot is starting...
+21:19:26 aiogram.dispatcher.dispatcher INFO Start polling.
+21:20:52 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:20:52 aiogram WARNING Goodbye!
+21:21:03 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:21:04 aiogram WARNING Updates were skipped successfully.
+21:21:04 root INFO Bot is starting...
+21:21:04 aiogram.dispatcher.dispatcher INFO Start polling.
+21:21:24 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:21:24 aiogram WARNING Goodbye!
+21:21:37 aiogram WARNING Goodbye!
+21:21:39 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:21:39 aiogram WARNING Updates were skipped successfully.
+21:21:39 root INFO Bot is starting...
+21:21:39 aiogram.dispatcher.dispatcher INFO Start polling.
+21:21:44 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:21:44 aiogram WARNING Goodbye!
+21:21:46 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:21:46 aiogram WARNING Updates were skipped successfully.
+21:21:46 root INFO Bot is starting...
+21:21:46 aiogram.dispatcher.dispatcher INFO Start polling.
+21:22:16 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:22:16 aiogram WARNING Goodbye!
+21:22:18 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:22:18 aiogram WARNING Updates were skipped successfully.
+21:22:18 root INFO Bot is starting...
+21:22:18 aiogram.dispatcher.dispatcher INFO Start polling.
+21:22:40 aiogram.dispatcher.dispatcher ERROR Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiohttp\connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1079, in create_connection
+    raise exceptions[0]
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1063, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 967, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 726, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 841, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 628, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiohttp\client.py", line 536, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1206, in _create_direct_connection
+    raise last_exc
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiohttp\connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiohttp\connector.py", line 988, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+21:22:46 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:22:46 aiogram WARNING Goodbye!
+21:22:48 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:22:48 aiogram WARNING Updates were skipped successfully.
+21:22:48 root INFO Bot is starting...
+21:22:48 aiogram.dispatcher.dispatcher INFO Start polling.
+21:28:45 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:28:45 aiogram WARNING Goodbye!
+21:29:02 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:29:02 aiogram WARNING Updates were skipped successfully.
+21:29:02 root INFO Bot is starting...
+21:29:02 aiogram.dispatcher.dispatcher INFO Start polling.
+21:29:54 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-28' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=NoSuchTableError('table_930143697')>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\main_logic.py", line 276, in process_simple_calendar
+    await add_birthday_to_db(
+  File "C:\Studying\Python\well_wisher_inno_bot\app\main_logic.py", line 291, in add_birthday_to_db
+    table = Table(table_name, metadata, autoload_with=engine)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in __new__
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\sql\schema.py", line 434, in __new__
+    return cls._new(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\sql\schema.py", line 488, in _new
+    with util.safe_reraise():
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\sql\schema.py", line 484, in _new
+    table.__init__(name, metadata, *args, _no_init=False, **kw)
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\sql\schema.py", line 864, in __init__
+    self._autoload(
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\sql\schema.py", line 896, in _autoload
+    conn_insp.reflect_table(
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\engine\reflection.py", line 1538, in reflect_table
+    raise exc.NoSuchTableError(table_name)
+sqlalchemy.exc.NoSuchTableError: table_930143697
+21:30:07 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:30:07 aiogram WARNING Goodbye!
+21:31:05 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:31:05 aiogram WARNING Updates were skipped successfully.
+21:31:05 root INFO Bot is starting...
+21:31:05 aiogram.dispatcher.dispatcher INFO Start polling.
+21:33:14 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:33:14 aiogram WARNING Goodbye!
+21:33:29 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:33:29 aiogram WARNING Updates were skipped successfully.
+21:33:29 root INFO Bot is starting...
+21:33:29 aiogram.dispatcher.dispatcher INFO Start polling.
+21:37:22 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:37:22 aiogram WARNING Goodbye!
+21:37:24 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:37:24 aiogram WARNING Updates were skipped successfully.
+21:37:24 root INFO Bot is starting...
+21:37:24 aiogram.dispatcher.dispatcher INFO Start polling.
+21:51:37 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:51:37 aiogram WARNING Goodbye!
+21:51:40 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:51:40 aiogram WARNING Updates were skipped successfully.
+21:51:40 root INFO Bot is starting...
+21:51:40 aiogram.dispatcher.dispatcher INFO Start polling.
+21:52:29 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=NoSuchTableError('table_930143697')>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\main_logic.py", line 107, in get_all_birthdays
+    table = Table(table_name, metadata, autoload_with=engine)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in __new__
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\sql\schema.py", line 434, in __new__
+    return cls._new(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\sql\schema.py", line 488, in _new
+    with util.safe_reraise():
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\sql\schema.py", line 484, in _new
+    table.__init__(name, metadata, *args, _no_init=False, **kw)
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\sql\schema.py", line 864, in __init__
+    self._autoload(
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\sql\schema.py", line 896, in _autoload
+    conn_insp.reflect_table(
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\sqlalchemy\engine\reflection.py", line 1538, in reflect_table
+    raise exc.NoSuchTableError(table_name)
+sqlalchemy.exc.NoSuchTableError: table_930143697
+21:53:18 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:53:18 aiogram WARNING Goodbye!
+21:53:42 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:53:42 aiogram WARNING Updates were skipped successfully.
+21:53:42 root INFO Bot is starting...
+21:53:42 aiogram.dispatcher.dispatcher INFO Start polling.
+21:57:10 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:57:10 aiogram WARNING Updates were skipped successfully.
+21:57:10 root INFO Bot is starting...
+21:57:10 aiogram.dispatcher.dispatcher INFO Start polling.
+21:57:40 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:57:40 aiogram WARNING Goodbye!
+21:57:42 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+21:57:42 aiogram WARNING Updates were skipped successfully.
+21:57:42 root INFO Bot is starting...
+21:57:42 aiogram.dispatcher.dispatcher INFO Start polling.
+21:59:18 aiogram.dispatcher.dispatcher INFO Stop polling...
+21:59:18 aiogram WARNING Goodbye!
