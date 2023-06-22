@@ -4557,3 +4557,84 @@ AttributeError: 'Chat' object has no attribute 'is_bot'
 12:10:52 aiogram.dispatcher.dispatcher INFO Start polling.
 12:13:40 aiogram.dispatcher.dispatcher INFO Stop polling...
 12:13:40 aiogram WARNING Goodbye!
+19:46:39 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+19:46:39 aiogram WARNING Updates were skipped successfully.
+19:46:39 root INFO Bot is starting...
+19:46:39 aiogram.dispatcher.dispatcher INFO Start polling.
+19:46:45 aiogram.dispatcher.dispatcher ERROR Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+19:46:55 aiogram.dispatcher.dispatcher ERROR Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+19:46:56 aiogram.dispatcher.dispatcher INFO Stop polling...
+19:46:56 aiogram WARNING Goodbye!
+19:47:00 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+19:47:00 aiogram WARNING Updates were skipped successfully.
+19:47:00 root INFO Bot is starting...
+19:47:00 aiogram.dispatcher.dispatcher INFO Start polling.
+19:47:05 aiogram.dispatcher.dispatcher ERROR Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+19:47:09 aiogram.dispatcher.dispatcher INFO Stop polling...
+19:47:09 aiogram WARNING Goodbye!
+19:47:13 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+19:47:13 aiogram WARNING Updates were skipped successfully.
+19:47:13 root INFO Bot is starting...
+19:47:13 aiogram.dispatcher.dispatcher INFO Start polling.
+19:47:18 aiogram.dispatcher.dispatcher INFO Stop polling...
+19:47:18 aiogram WARNING Goodbye!
+19:59:31 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+19:59:31 aiogram WARNING Updates were skipped successfully.
+19:59:31 root INFO Bot is starting...
+19:59:31 aiogram.dispatcher.dispatcher INFO Start polling.
+20:00:37 aiogram.dispatcher.dispatcher INFO Stop polling...
+20:00:37 aiogram WARNING Goodbye!
