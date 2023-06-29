@@ -26,10 +26,13 @@ holiday = Holiday()
 
 async def admin_panel(message: types.Message):
     if message.from_user.id not in admin_ids:
-        await bot.send_message(message.from_user.id, 'You don`t have enough permissions to access the admin panel.')
+        await bot.send_message(
+            message.from_user.id,
+            "You don`t have enough permissions to access the admin panel.",
+        )
         return
 
-    await bot.send_message(message.from_user.id, 'Welcome to the admin panel!')
+    await bot.send_message(message.from_user.id, "Welcome to the admin panel!")
 
 
 async def get_user_data(user_id):
@@ -264,26 +267,26 @@ async def get_today(message: types.Message):
     table_name = f"table_{chat_id}"
     table = Table(table_name, metadata, autoload_with=engine)
 
-    print(datetime.date.today().strftime('%Y-%m-%d'))
+    print(datetime.date.today().strftime("%Y-%m-%d"))
 
     # select_query = table.select().where(func.split(table.c.date, ' ')[0] == datetime.date.today().strftime('%Y-%m-%d'))
 
-    date_str = datetime.date.today().strftime('%Y-%m-%d')
-    substr_date = func.substr(table.c.date, 1, func.instr(table.c.date, ' ') - 1).label('substr_date')
-    select_query = table.select().where(cast(substr_date, String).like(f'{date_str}%'))
-
+    date_str = datetime.date.today().strftime("%Y-%m-%d")
+    substr_date = func.substr(table.c.date, 1, func.instr(table.c.date, " ") - 1).label(
+        "substr_date"
+    )
+    select_query = table.select().where(cast(substr_date, String).like(f"{date_str}%"))
 
     results = session.execute(select_query).fetchall()
 
-
     hd_found = False
-    answer_data = 'Today`s events:\n'
+    answer_data = "Today`s events:\n"
     for row in results:
-        if row[1]=='0':
-            hd_found=True
-            answer_data += f'{row[0]}\n'
+        if row[1] == "0":
+            hd_found = True
+            answer_data += f"{row[0]}\n"
         else:
-            hd_found=True
+            hd_found = True
             user_data = await get_user_data(row[0])
             answer_data += f'{user_data["username"]}`s birthday\n'
 
@@ -378,14 +381,16 @@ async def add_holiday_to_db(chat_id, holiday_name, callback_query, date):
 
 
 async def schedule_task(schedule_time, callback):
-    print('schedule_task')
+    print("schedule_task")
     while True:
         now = datetime.datetime.now()
         schedule_time = now.replace(hour=11, minute=26, second=0, microsecond=0)
         if now >= schedule_time:
             # Calculate the next day's schedule time
             next_day = now + datetime.timedelta(days=1)
-            next_schedule_time = next_day.replace(hour=11, minute=26, second=0, microsecond=0)
+            next_schedule_time = next_day.replace(
+                hour=11, minute=26, second=0, microsecond=0
+            )
             time_difference = (next_schedule_time - now).total_seconds()
 
             # Run the task
@@ -397,6 +402,7 @@ async def schedule_task(schedule_time, callback):
             # Wait for 1 minute and check again
             await asyncio.sleep(60)
 
+
 async def send_birthday_congratulations():
     today = datetime.date.today()
     tables = metadata.tables.keys()
@@ -404,7 +410,9 @@ async def send_birthday_congratulations():
     for table_name in tables:
         if table_name.startswith("table_"):
             table = Table(table_name, metadata, autoload=True)
-            query = table.select().where(func.split(table.c.date, ' ')[0] == today.strftime('%Y-%m-%d'))
+            query = table.select().where(
+                func.split(table.c.date, " ")[0] == today.strftime("%Y-%m-%d")
+            )
             result = await engine.execute(query)
             rows = await result.fetchall()
 
@@ -415,7 +423,7 @@ async def send_birthday_congratulations():
                 await bot.send_message(chat_id, message)
 
 
-@dp.message_handler(commands=['fetch_data'])
+@dp.message_handler(commands=["fetch_data"])
 async def fetch_data_handler(message: types.Message):
     users = session.query().all()
     print(users)
