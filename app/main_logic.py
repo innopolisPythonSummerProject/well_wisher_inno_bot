@@ -415,6 +415,17 @@ async def send_birthday_congratulations():
                 await bot.send_message(chat_id, message)
 
 
+@dp.message_handler(commands=['fetch_data'])
+async def fetch_data_handler(message: types.Message):
+    users = session.query().all()
+    print(users)
+    for user in users:
+        # Perform your desired actions with the user data
+        user_id = user.id
+        user_name = user.name
+        await message.answer(f"User ID: {user_id}, Name: {user_name}")
+
+
 def register_handlers(dp: Dispatcher):
     # dp.register_message_handler(admin_panel, commands='settings')
     dp.register_message_handler(start_handler, commands="start")
