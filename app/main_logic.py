@@ -1,3 +1,5 @@
+import asyncio
+
 from aiogram import types, Dispatcher
 from app.models import ChatTable
 from sqlalchemy import create_engine, MetaData, Table, func, cast, String
@@ -42,6 +44,9 @@ async def get_user_data(user_id):
 
 
 async def start_handler(message: types.Message):
+    schedule_time = datetime.time(hour=11, minute=26)
+    await schedule_task(schedule_time, send_birthday_congratulations)
+
     # Получаем идентификатор чата
     chat_id = message.chat.id
 
@@ -370,6 +375,44 @@ async def add_holiday_to_db(chat_id, holiday_name, callback_query, date):
         session.execute(insert_query)
 
     session.commit()
+
+
+async def schedule_task(schedule_time, callback):
+    print('schedule_task')
+    while True:
+        now = datetime.datetime.now()
+        schedule_time = now.replace(hour=11, minute=26, second=0, microsecond=0)
+        if now >= schedule_time:
+            # Calculate the next day's schedule time
+            next_day = now + datetime.timedelta(days=1)
+            next_schedule_time = next_day.replace(hour=11, minute=26, second=0, microsecond=0)
+            time_difference = (next_schedule_time - now).total_seconds()
+
+            # Run the task
+            await callback()
+
+            # Wait until the next day to schedule the task again
+            await asyncio.sleep(time_difference)
+        else:
+            # Wait for 1 minute and check again
+            await asyncio.sleep(60)
+
+async def send_birthday_congratulations():
+    today = datetime.date.today()
+    tables = metadata.tables.keys()
+
+    for table_name in tables:
+        if table_name.startswith("table_"):
+            table = Table(table_name, metadata, autoload=True)
+            query = table.select().where(func.split(table.c.date, ' ')[0] == today.strftime('%Y-%m-%d'))
+            result = await engine.execute(query)
+            rows = await result.fetchall()
+
+            for row in rows:
+                chat_id = int(table_name.split("_")[1])
+                user_name = row.username
+                message = f"Happy birthday, {user_name}! 🎉🎂"
+                await bot.send_message(chat_id, message)
 
 
 def register_handlers(dp: Dispatcher):
