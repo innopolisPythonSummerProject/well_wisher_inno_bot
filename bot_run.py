@@ -1,16 +1,26 @@
 import logging
+import os
 
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
+from aiogram.types import MenuButtonWebApp, WebAppInfo
 from aiogram.utils import executor
 
 from app.set_bot_commands import set_default_commands
 from bot_create import dp
 from app import main_logic
+from bot_create import bot
+
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 
 async def on_startup(dp):
     logging.info("Bot is starting...")
     await set_default_commands(dp)
+    await bot.set_chat_menu_button(
+        menu_button=MenuButtonWebApp(text="Menu", web_app=WebAppInfo(url=os.getenv("WEB_APP_URL")))
+    )
 
 
 if __name__ == "__main__":
