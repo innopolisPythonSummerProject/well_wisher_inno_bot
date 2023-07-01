@@ -11,6 +11,7 @@ from app import main_logic
 from bot_create import bot
 
 from dotenv import load_dotenv, find_dotenv
+from app.main_logic import run_infinity_loop
 
 load_dotenv(find_dotenv())
 
@@ -34,3 +35,5 @@ if __name__ == "__main__":
     storage = MemoryStorage()
     main_logic.register_handlers(dp)
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
+    # run_infinity_loop()
+

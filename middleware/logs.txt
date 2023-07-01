@@ -613,3 +613,74 @@ Traceback (most recent call last):
 aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
 18:01:54 aiogram.dispatcher.dispatcher INFO Stop polling...
 18:01:54 aiogram WARNING Goodbye!
+09:48:14 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+09:48:14 aiogram WARNING Updates were skipped successfully.
+09:48:14 root INFO Bot is starting...
+09:48:15 aiogram.dispatcher.dispatcher INFO Start polling.
+09:49:30 aiogram.dispatcher.dispatcher INFO Stop polling...
+09:49:30 aiogram WARNING Goodbye!
+10:30:57 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:30:57 aiogram WARNING Updates were skipped successfully.
+10:30:57 root INFO Bot is starting...
+10:30:58 aiogram.dispatcher.dispatcher INFO Start polling.
+10:31:25 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("Bot.send_message() missing 1 required positional argument: 'text'")>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\main_logic.py", line 441, in run_infinity_loop
+    await bot.send_message(message.from_user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Bot.send_message() missing 1 required positional argument: 'text'
+10:31:47 aiogram.dispatcher.dispatcher INFO Stop polling...
+10:31:47 aiogram WARNING Goodbye!
+10:31:52 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:31:53 aiogram WARNING Updates were skipped successfully.
+10:31:53 root INFO Bot is starting...
+10:31:53 aiogram.dispatcher.dispatcher INFO Start polling.
+10:32:49 aiogram.dispatcher.dispatcher INFO Stop polling...
+10:32:49 aiogram WARNING Goodbye!
+10:43:06 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:43:06 aiogram WARNING Updates were skipped successfully.
+10:43:06 root INFO Bot is starting...
+10:43:06 aiogram.dispatcher.dispatcher INFO Start polling.
+10:43:18 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('iterate_tables() takes 0 positional arguments but 1 was given')>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: iterate_tables() takes 0 positional arguments but 1 was given
+10:43:52 aiogram.dispatcher.dispatcher INFO Stop polling...
+10:43:52 aiogram WARNING Goodbye!
+10:43:57 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+10:43:58 aiogram WARNING Updates were skipped successfully.
+10:43:58 root INFO Bot is starting...
+10:43:58 aiogram.dispatcher.dispatcher INFO Start polling.
+10:44:14 aiogram.dispatcher.dispatcher INFO Stop polling...
+10:44:14 aiogram WARNING Goodbye!

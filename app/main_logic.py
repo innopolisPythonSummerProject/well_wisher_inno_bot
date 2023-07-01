@@ -2,7 +2,7 @@ import asyncio
 
 from aiogram import types, Dispatcher
 from app.models import ChatTable
-from sqlalchemy import create_engine, MetaData, Table, func, cast, String
+from sqlalchemy import create_engine, MetaData, Table, func, cast, String, inspect
 from sqlalchemy.orm import sessionmaker
 import datetime
 
@@ -434,9 +434,34 @@ async def fetch_data_handler(message: types.Message):
         await message.answer(f"User ID: {user_id}, Name: {user_name}")
 
 
+# @dp.message_handler(commands=['start'])
+async def run_infinity_loop(message: types.Message):
+    while True:
+        await asyncio.sleep(1)
+        await bot.send_message(message.from_user.id, "Hello!")
+
+
+inspector = inspect(engine)
+
+
+async def iterate_tables():
+    # Get all table names
+    table_names = inspector.get_table_names()
+
+    for table_name in table_names:
+        # Perform actions or retrieve data for each table
+        # For example, you can print the table name:
+        print("Table Name:", table_name)
+
+
+async def handle_iterate_tables(message: types.Message):
+    await iterate_tables()
+
+
 def register_handlers(dp: Dispatcher):
     # dp.register_message_handler(admin_panel, commands='settings')
-    dp.register_message_handler(start_handler, commands="start")
+    # dp.register_message_handler(run_infinity_loop, commands="start")
+    dp.register_message_handler(handle_iterate_tables, commands="iterate_tables")
     dp.register_message_handler(add_birthday, commands="add_birthday")
     dp.register_message_handler(add_holiday, commands="add_holiday")
     dp.register_message_handler(delete_birthday, commands="delete_birthday")
