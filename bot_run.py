@@ -35,5 +35,4 @@ if __name__ == "__main__":
     storage = MemoryStorage()
     main_logic.register_handlers(dp)
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
-    # run_infinity_loop()
 

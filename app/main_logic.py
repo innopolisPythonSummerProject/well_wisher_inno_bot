@@ -2,7 +2,7 @@ import asyncio
 
 from aiogram import types, Dispatcher
 from app.models import ChatTable
-from sqlalchemy import create_engine, MetaData, Table, func, cast, String, inspect
+from sqlalchemy import create_engine, MetaData, Table, func, cast, String, inspect, select
 from sqlalchemy.orm import sessionmaker
 import datetime
 
@@ -47,9 +47,6 @@ async def get_user_data(user_id):
 
 
 async def start_handler(message: types.Message):
-    schedule_time = datetime.time(hour=11, minute=26)
-    await schedule_task(schedule_time, send_birthday_congratulations)
-
     # Получаем идентификатор чата
     chat_id = message.chat.id
 
@@ -403,24 +400,48 @@ async def schedule_task(schedule_time, callback):
             await asyncio.sleep(60)
 
 
+inspector = inspect(engine)
+
 async def send_birthday_congratulations():
-    today = datetime.date.today()
+    today = ".".join(str(datetime.date.today()).split('-')[1:])
     tables = metadata.tables.keys()
 
-    for table_name in tables:
+    table_names = inspector.get_table_names()
+
+    for table_name in table_names:
         if table_name.startswith("table_"):
-            table = Table(table_name, metadata, autoload=True)
-            query = table.select().where(
-                func.split(table.c.date, " ")[0] == today.strftime("%Y-%m-%d")
-            )
-            result = await engine.execute(query)
-            rows = await result.fetchall()
+
+            table = Table(table_name, metadata, autoload_with=engine)
+
+            # select_query = table.select().where(
+            #     func.split(table.c.date, " ")[0] == today.strftime("%Y-%m-%d")
+            # )
+            # select_query = table.select().where(
+            #     table.c.date == today.strftime("%Y-%m-%d")
+            # )
+            # select_query = table.select()
+
+            select_query = select(table)
+
+            result = session.execute(select_query)
+            print(select_query)
+
+            result = session.execute(select_query)
+            # result = await engine.execute(query)
+            rows = result.fetchall()
 
             for row in rows:
-                chat_id = int(table_name.split("_")[1])
-                user_name = row.username
-                message = f"Happy birthday, {user_name}! 🎉🎂"
-                await bot.send_message(chat_id, message)
+                date = ".".join(row[2].split()[0].split('-')[1:])
+                if date == today:
+                    if row[1] == '1':
+                        chat_id = int(table_name.split("_")[1])
+                        user_data = await get_user_data(row[0])
+                        message = f"Happy birthday, {user_data['username']}! 🎉🎂"
+                        await bot.send_message(chat_id, message)
+
+                    elif row[1] == '0':
+                        message = f"Today is {row[0]}!"
+                        await bot.send_message(chat_id, message)
 
 
 @dp.message_handler(commands=["fetch_data"])
@@ -441,7 +462,7 @@ async def run_infinity_loop(message: types.Message):
         await bot.send_message(message.from_user.id, "Hello!")
 
 
-inspector = inspect(engine)
+
 
 
 async def iterate_tables():
@@ -454,14 +475,17 @@ async def iterate_tables():
         print("Table Name:", table_name)
 
 
-async def handle_iterate_tables(message: types.Message):
-    await iterate_tables()
+async def run_send_birthday_congratulations(message: types.Message):
+    while True:
+        # print("Заходит")
+        await send_birthday_congratulations()
+        await asyncio.sleep(30)
 
 
 def register_handlers(dp: Dispatcher):
     # dp.register_message_handler(admin_panel, commands='settings')
-    # dp.register_message_handler(run_infinity_loop, commands="start")
-    dp.register_message_handler(handle_iterate_tables, commands="iterate_tables")
+    dp.register_message_handler(start_handler, commands="start")
+    dp.register_message_handler(run_send_birthday_congratulations, commands="register")
     dp.register_message_handler(add_birthday, commands="add_birthday")
     dp.register_message_handler(add_holiday, commands="add_holiday")
     dp.register_message_handler(delete_birthday, commands="delete_birthday")
