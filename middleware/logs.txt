@@ -684,3 +684,685 @@ TypeError: iterate_tables() takes 0 positional arguments but 1 was given
 10:43:58 aiogram.dispatcher.dispatcher INFO Start polling.
 10:44:14 aiogram.dispatcher.dispatcher INFO Stop polling...
 10:44:14 aiogram WARNING Goodbye!
+12:18:25 aiogram WARNING Goodbye!
+12:18:43 aiogram WARNING Goodbye!
+12:19:32 aiogram WARNING Goodbye!
+12:20:10 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:20:10 aiogram WARNING Updates were skipped successfully.
+12:20:10 root INFO Bot is starting...
+12:20:10 aiogram.dispatcher.dispatcher INFO Start polling.
+12:20:26 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:20:26 aiogram WARNING Goodbye!
+12:25:27 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:25:27 aiogram WARNING Updates were skipped successfully.
+12:25:27 root INFO Bot is starting...
+12:25:28 aiogram.dispatcher.dispatcher INFO Start polling.
+12:26:16 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:26:16 aiogram WARNING Goodbye!
+12:26:28 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:26:28 aiogram WARNING Updates were skipped successfully.
+12:26:28 root INFO Bot is starting...
+12:26:29 aiogram.dispatcher.dispatcher INFO Start polling.
+12:26:32 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('run_send_birthday_congratulations() takes 0 positional arguments but 1 was given')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: run_send_birthday_congratulations() takes 0 positional arguments but 1 was given
+12:28:20 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:28:20 aiogram WARNING Goodbye!
+12:28:24 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:28:25 aiogram WARNING Updates were skipped successfully.
+12:28:25 root INFO Bot is starting...
+12:28:25 aiogram.dispatcher.dispatcher INFO Start polling.
+12:29:25 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:29:25 aiogram WARNING Goodbye!
+12:29:28 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:29:28 aiogram WARNING Updates were skipped successfully.
+12:29:28 root INFO Bot is starting...
+12:29:28 aiogram.dispatcher.dispatcher INFO Start polling.
+12:29:33 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:29:33 aiogram WARNING Goodbye!
+12:29:39 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:29:39 aiogram WARNING Updates were skipped successfully.
+12:29:39 root INFO Bot is starting...
+12:29:39 aiogram.dispatcher.dispatcher INFO Start polling.
+12:29:45 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:29:45 aiogram WARNING Goodbye!
+12:30:34 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:30:34 aiogram WARNING Updates were skipped successfully.
+12:30:34 root INFO Bot is starting...
+12:30:34 aiogram.dispatcher.dispatcher INFO Start polling.
+12:30:37 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("Additional arguments should be named <dialectname>_<argument>, got 'autoload'")>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 467, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 419, in send_birthday_congratulations
+    table = Table(table_name, metadata, autoload=True)
+  File "<string>", line 2, in __new__
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\schema.py", line 434, in __new__
+    return cls._new(*args, **kw)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\schema.py", line 488, in _new
+    with util.safe_reraise():
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\schema.py", line 484, in _new
+    table.__init__(name, metadata, *args, _no_init=False, **kw)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\schema.py", line 858, in __init__
+    self._extra_kwargs(**kw)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\schema.py", line 1006, in _extra_kwargs
+    self._validate_dialect_kwargs(kwargs)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 590, in _validate_dialect_kwargs
+    raise TypeError(
+TypeError: Additional arguments should be named <dialectname>_<argument>, got 'autoload'
+12:31:01 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:31:01 aiogram WARNING Goodbye!
+12:31:04 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:31:04 aiogram WARNING Updates were skipped successfully.
+12:31:04 root INFO Bot is starting...
+12:31:04 aiogram.dispatcher.dispatcher INFO Start polling.
+12:31:06 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError('date')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1623, in __getattr__
+    return self._index[key][1]
+KeyError: 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 467, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 421, in send_birthday_congratulations
+    func.split(table.c.date, " ")[0] == today.strftime("%Y-%m-%d")
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1625, in __getattr__
+    raise AttributeError(key) from err
+AttributeError: date
+12:34:51 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:34:51 aiogram WARNING Goodbye!
+12:34:54 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:34:54 aiogram WARNING Updates were skipped successfully.
+12:34:54 root INFO Bot is starting...
+12:34:54 aiogram.dispatcher.dispatcher INFO Start polling.
+12:34:56 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError('date')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1623, in __getattr__
+    return self._index[key][1]
+KeyError: 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 467, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 421, in send_birthday_congratulations
+    func.split(table.c.date, " ")[0] == today.strftime("%Y-%m-%d")
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1625, in __getattr__
+    raise AttributeError(key) from err
+AttributeError: date
+12:36:20 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:36:20 aiogram WARNING Goodbye!
+12:36:23 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:36:23 aiogram WARNING Updates were skipped successfully.
+12:36:23 root INFO Bot is starting...
+12:36:24 aiogram.dispatcher.dispatcher INFO Start polling.
+12:37:32 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError('date')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1623, in __getattr__
+    return self._index[key][1]
+KeyError: 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 466, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 420, in send_birthday_congratulations
+    func.split(table.c.date, " ")[0] == today.strftime("%Y-%m-%d")
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1625, in __getattr__
+    raise AttributeError(key) from err
+AttributeError: date
+12:41:40 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:41:40 aiogram WARNING Goodbye!
+12:41:42 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:41:42 aiogram WARNING Updates were skipped successfully.
+12:41:42 root INFO Bot is starting...
+12:41:43 aiogram.dispatcher.dispatcher INFO Start polling.
+12:41:57 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'Engine' object has no attribute 'execute'")>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 468, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 423, in send_birthday_congratulations
+    result = await engine.execute(query)
+AttributeError: 'Engine' object has no attribute 'execute'
+12:43:28 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:43:28 aiogram WARNING Goodbye!
+12:43:31 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:43:31 aiogram WARNING Updates were skipped successfully.
+12:43:31 root INFO Bot is starting...
+12:43:32 aiogram.dispatcher.dispatcher INFO Start polling.
+12:43:34 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OperationalError('(sqlite3.OperationalError) near "FROM": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: near "FROM": syntax error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 469, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 423, in send_birthday_congratulations
+    result = session.execute(select_query).fetchone()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2225, in execute
+    return self._execute_internal(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2129, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1412, in execute
+    return meth(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "FROM": syntax error
+[SQL: SELECT 
+FROM "table_-857882889"]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+12:44:07 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:44:07 aiogram WARNING Goodbye!
+12:44:10 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:44:10 aiogram WARNING Updates were skipped successfully.
+12:44:10 root INFO Bot is starting...
+12:44:11 aiogram.dispatcher.dispatcher INFO Start polling.
+12:44:11 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OperationalError('(sqlite3.OperationalError) near "FROM": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: near "FROM": syntax error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 469, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 423, in send_birthday_congratulations
+    result = session.execute(select_query)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2225, in execute
+    return self._execute_internal(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2129, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1412, in execute
+    return meth(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "FROM": syntax error
+[SQL: SELECT 
+FROM "table_-857882889"]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+12:47:09 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:47:09 aiogram WARNING Goodbye!
+12:47:11 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:47:12 aiogram WARNING Updates were skipped successfully.
+12:47:12 root INFO Bot is starting...
+12:47:12 aiogram.dispatcher.dispatcher INFO Start polling.
+12:47:13 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OperationalError('(sqlite3.OperationalError) near "FROM": syntax error')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: near "FROM": syntax error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 470, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 424, in send_birthday_congratulations
+    result = session.execute(select_query)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2225, in execute
+    return self._execute_internal(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2129, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1412, in execute
+    return meth(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "FROM": syntax error
+[SQL: SELECT 
+FROM "table_-857882889"]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+12:48:08 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:48:08 aiogram WARNING Goodbye!
+12:48:10 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:48:10 aiogram WARNING Updates were skipped successfully.
+12:48:10 root INFO Bot is starting...
+12:48:10 aiogram.dispatcher.dispatcher INFO Start polling.
+12:48:13 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError('date')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1623, in __getattr__
+    return self._index[key][1]
+KeyError: 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 470, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 419, in send_birthday_congratulations
+    func.split(table.c.date, " ")[0] == today.strftime("%Y-%m-%d")
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1625, in __getattr__
+    raise AttributeError(key) from err
+AttributeError: date
+12:52:26 aiogram.dispatcher.dispatcher INFO Stop polling...
+12:52:26 aiogram WARNING Goodbye!
+12:52:28 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+12:52:28 aiogram WARNING Updates were skipped successfully.
+12:52:28 root INFO Bot is starting...
+12:52:29 aiogram.dispatcher.dispatcher INFO Start polling.
+12:52:37 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError('date')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1623, in __getattr__
+    return self._index[key][1]
+KeyError: 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 473, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 422, in send_birthday_congratulations
+    table.c.date == today.strftime("%Y-%m-%d")
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\base.py", line 1625, in __getattr__
+    raise AttributeError(key) from err
+AttributeError: date
+13:04:13 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:04:13 aiogram WARNING Goodbye!
+13:04:15 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:04:16 aiogram WARNING Updates were skipped successfully.
+13:04:16 root INFO Bot is starting...
+13:04:16 aiogram.dispatcher.dispatcher INFO Start polling.
+13:04:19 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=ArgumentError("Column expression, FROM clause, or other columns clause element expected, got [Table('table_-857882889', MetaData(), schema=None)]. Did you mean to say select(Table('table_-857882889', MetaData(), schema=None))?")>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 478, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 426, in send_birthday_congratulations
+    select_query = select([table])
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\_selectable_constructors.py", line 489, in select
+    return Select(*entities)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\selectable.py", line 5130, in __init__
+    self._raw_columns = [
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\selectable.py", line 5131, in <listcomp>
+    coercions.expect(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 413, in expect
+    resolved = impl._literal_coercion(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 651, in _literal_coercion
+    self._raise_for_expected(element, argname)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 1139, in _raise_for_expected
+    return super()._raise_for_expected(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 710, in _raise_for_expected
+    super()._raise_for_expected(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 535, in _raise_for_expected
+    raise exc.ArgumentError(msg, code=code) from err
+sqlalchemy.exc.ArgumentError: Column expression, FROM clause, or other columns clause element expected, got [Table('table_-857882889', MetaData(), schema=None)]. Did you mean to say select(Table('table_-857882889', MetaData(), schema=None))?
+13:07:12 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:07:12 aiogram WARNING Goodbye!
+13:07:14 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:07:15 aiogram WARNING Updates were skipped successfully.
+13:07:15 root INFO Bot is starting...
+13:07:15 aiogram.dispatcher.dispatcher INFO Start polling.
+13:07:17 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=ArgumentError("Column expression, FROM clause, or other columns clause element expected, got [Table('table_-857882889', MetaData(), Column('data', VARCHAR(length=255), table=<table_-857882889>), Column('is_birthday', VARCHAR(length=255), table=<table_-857882889>), Column('date', VARCHAR(length=255), table=<table_-857882889>), schema=None)]. Did you mean to say select(Table('table_-857882889', MetaData(), Column('data', VARCHAR(length=255), table=<table_-857882889>), Column('is_birthday', VARCHAR(length=255), table=<table_-857882889>), Column('date', VARCHAR(length=255), table=<table_-857882889>), schema=None))?")>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 479, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 427, in send_birthday_congratulations
+    select_query = select([table])
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\_selectable_constructors.py", line 489, in select
+    return Select(*entities)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\selectable.py", line 5130, in __init__
+    self._raw_columns = [
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\selectable.py", line 5131, in <listcomp>
+    coercions.expect(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 413, in expect
+    resolved = impl._literal_coercion(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 651, in _literal_coercion
+    self._raise_for_expected(element, argname)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 1139, in _raise_for_expected
+    return super()._raise_for_expected(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 710, in _raise_for_expected
+    super()._raise_for_expected(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 535, in _raise_for_expected
+    raise exc.ArgumentError(msg, code=code) from err
+sqlalchemy.exc.ArgumentError: Column expression, FROM clause, or other columns clause element expected, got [Table('table_-857882889', MetaData(), Column('data', VARCHAR(length=255), table=<table_-857882889>), Column('is_birthday', VARCHAR(length=255), table=<table_-857882889>), Column('date', VARCHAR(length=255), table=<table_-857882889>), schema=None)]. Did you mean to say select(Table('table_-857882889', MetaData(), Column('data', VARCHAR(length=255), table=<table_-857882889>), Column('is_birthday', VARCHAR(length=255), table=<table_-857882889>), Column('date', VARCHAR(length=255), table=<table_-857882889>), schema=None))?
+13:07:28 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:07:28 aiogram WARNING Goodbye!
+13:07:30 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:07:30 aiogram WARNING Updates were skipped successfully.
+13:07:30 root INFO Bot is starting...
+13:07:30 aiogram.dispatcher.dispatcher INFO Start polling.
+13:11:43 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:11:43 aiogram WARNING Goodbye!
+13:11:45 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:11:45 aiogram WARNING Updates were skipped successfully.
+13:11:45 root INFO Bot is starting...
+13:11:45 aiogram.dispatcher.dispatcher INFO Start polling.
+13:12:53 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-47' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("'coroutine' object is not subscriptable")>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 479, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 441, in send_birthday_congratulations
+    message = f"Happy birthday, {user_data['username']}! \U0001f389\U0001f382"
+TypeError: 'coroutine' object is not subscriptable
+13:13:39 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:13:39 aiogram WARNING Goodbye!
+13:13:41 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:13:41 aiogram WARNING Updates were skipped successfully.
+13:13:41 root INFO Bot is starting...
+13:13:41 aiogram.dispatcher.dispatcher INFO Start polling.
+13:14:08 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=RetryAfter('Flood control exceeded. Retry in 36 seconds.')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 479, in run_send_birthday_congratulations
+    await send_birthday_congratulations()
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 442, in send_birthday_congratulations
+    await bot.send_message(chat_id, message)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\api.py", line 111, in check_result
+    raise exceptions.RetryAfter(parameters.retry_after)
+aiogram.utils.exceptions.RetryAfter: Flood control exceeded. Retry in 36 seconds.
+13:14:20 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:14:20 aiogram WARNING Goodbye!
+13:17:46 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:17:47 aiogram WARNING Updates were skipped successfully.
+13:17:47 root INFO Bot is starting...
+13:17:47 aiogram.dispatcher.dispatcher INFO Start polling.
+13:17:54 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:17:54 aiogram WARNING Goodbye!
+13:18:44 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:18:44 aiogram WARNING Updates were skipped successfully.
+13:18:44 root INFO Bot is starting...
+13:18:45 aiogram.dispatcher.dispatcher INFO Start polling.
+13:18:53 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:18:53 aiogram WARNING Goodbye!
+13:19:24 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:19:24 aiogram WARNING Updates were skipped successfully.
+13:19:24 root INFO Bot is starting...
+13:19:24 aiogram.dispatcher.dispatcher INFO Start polling.
+13:19:27 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:19:27 aiogram WARNING Goodbye!
+13:20:07 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:20:07 aiogram WARNING Updates were skipped successfully.
+13:20:07 root INFO Bot is starting...
+13:20:07 aiogram.dispatcher.dispatcher INFO Start polling.
+13:20:10 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:20:10 aiogram WARNING Goodbye!
+13:20:53 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:20:53 aiogram WARNING Updates were skipped successfully.
+13:20:53 root INFO Bot is starting...
+13:20:54 aiogram.dispatcher.dispatcher INFO Start polling.
+13:20:56 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:20:56 aiogram WARNING Goodbye!
+13:23:32 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:23:32 aiogram WARNING Updates were skipped successfully.
+13:23:32 root INFO Bot is starting...
+13:23:32 aiogram.dispatcher.dispatcher INFO Start polling.
+13:23:41 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=NoSuchTableError('table_-608744781')>
+Traceback (most recent call last):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 314, in process_simple_calendar
+    await add_birthday_to_db(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\app\main_logic.py", line 329, in add_birthday_to_db
+    table = Table(table_name, metadata, autoload_with=engine)
+  File "<string>", line 2, in __new__
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\schema.py", line 434, in __new__
+    return cls._new(*args, **kw)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\schema.py", line 488, in _new
+    with util.safe_reraise():
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\schema.py", line 484, in _new
+    table.__init__(name, metadata, *args, _no_init=False, **kw)
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\schema.py", line 864, in __init__
+    self._autoload(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\sql\schema.py", line 896, in _autoload
+    conn_insp.reflect_table(
+  File "C:\Users\milan\OneDrive\Документы\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\sqlalchemy\engine\reflection.py", line 1538, in reflect_table
+    raise exc.NoSuchTableError(table_name)
+sqlalchemy.exc.NoSuchTableError: table_-608744781
+13:24:30 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:24:30 aiogram WARNING Goodbye!
+13:24:32 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:24:32 aiogram WARNING Updates were skipped successfully.
+13:24:32 root INFO Bot is starting...
+13:24:32 aiogram.dispatcher.dispatcher INFO Start polling.
+13:24:58 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:24:58 aiogram WARNING Goodbye!
+13:25:24 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:25:25 aiogram WARNING Updates were skipped successfully.
+13:25:25 root INFO Bot is starting...
+13:25:25 aiogram.dispatcher.dispatcher INFO Start polling.
+13:26:30 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:26:30 aiogram WARNING Goodbye!
+13:26:32 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:26:33 aiogram WARNING Updates were skipped successfully.
+13:26:33 root INFO Bot is starting...
+13:26:33 aiogram.dispatcher.dispatcher INFO Start polling.
+13:29:43 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:29:43 aiogram WARNING Goodbye!
