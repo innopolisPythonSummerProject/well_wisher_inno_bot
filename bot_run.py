@@ -1,17 +1,14 @@
 import logging
-import os
 
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from aiogram.types import MenuButtonWebApp, WebAppInfo
 from aiogram.utils import executor
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from dotenv import find_dotenv, load_dotenv
 
+from app import handlers
+from app.handlers import send_birthday_congratulations
 from app.set_bot_commands import set_default_commands
 from bot_create import dp
-from app import main_logic
-from bot_create import bot
-
-from dotenv import load_dotenv, find_dotenv
-from app.main_logic import run_infinity_loop
 
 load_dotenv(find_dotenv())
 
@@ -19,9 +16,11 @@ load_dotenv(find_dotenv())
 async def on_startup(dp):
     logging.info("Bot is starting...")
     await set_default_commands(dp)
-    await bot.set_chat_menu_button(
-        menu_button=MenuButtonWebApp(text="Menu", web_app=WebAppInfo(url=os.getenv("WEB_APP_URL")))
-    )
+
+    # Send the keyboard to the user
+    scheduler = AsyncIOScheduler()
+    scheduler.add_job(send_birthday_congratulations, "interval", minutes=1)
+    scheduler.start()
 
 
 if __name__ == "__main__":
@@ -33,6 +32,5 @@ if __name__ == "__main__":
     )
     logging.getLogger().addHandler(logging.StreamHandler())
     storage = MemoryStorage()
-    main_logic.register_handlers(dp)
+    handlers.register_handlers(dp)
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
-

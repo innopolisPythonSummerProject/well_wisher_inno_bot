@@ -1,8 +1,8 @@
+import os
+
 from aiogram import Bot
 from aiogram.dispatcher import Dispatcher
-
-import os
-from dotenv import load_dotenv, find_dotenv
+from dotenv import find_dotenv, load_dotenv
 
 load_dotenv(find_dotenv())
 
