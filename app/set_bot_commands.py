@@ -4,7 +4,8 @@ from aiogram import types
 async def set_default_commands(dp):
     await dp.bot.set_my_commands(
         [
-            types.BotCommand("start", "Start the bot"),
+            types.BotCommand("start", "Start the dialog with the bot"),
+            types.BotCommand("start_chat", "Register this chat"),
             types.BotCommand("add_birthday", "Add birthday to the database"),
             types.BotCommand("add_holiday", "Add holiday to the database"),
             types.BotCommand("get_all_birthdays", "Get list of birthdays"),

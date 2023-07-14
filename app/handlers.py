@@ -1,38 +1,34 @@
-import asyncio
-
-from aiogram import types, Dispatcher
-from app.models import ChatTable
-from sqlalchemy import create_engine, MetaData, Table, func, cast, String, inspect, select
-from sqlalchemy.orm import sessionmaker
 import datetime
+import json
 
-# from app.commands import set_default_commands
-
-from aiogram_calendar import simple_cal_callback, SimpleCalendar
+import requests
+from aiogram import Dispatcher, types
 from aiogram.types import CallbackQuery
-from bot_create import dp
+from aiogram_calendar import SimpleCalendar, simple_cal_callback
+from sqlalchemy import String, Table, cast, func, inspect, select
 
-from bot_create import bot
-from app.models import Holiday
+from app.database import engine, metadata, session
+from app.keyboard import keyboard
+from app.models import ChatTable, Holiday
+from bot_create import bot, dp
 
-admin_ids = [930143697, 580245280, 1089210807, 362841815]
-
-engine = create_engine("sqlite:///chats.db")
-metadata = MetaData()
-Session = sessionmaker(bind=engine)
-session = Session()
 holiday = Holiday()
 
+INSPECTOR = inspect(engine)
 
-async def admin_panel(message: types.Message):
-    if message.from_user.id not in admin_ids:
-        await bot.send_message(
-            message.from_user.id,
-            "You don`t have enough permissions to access the admin panel.",
-        )
-        return
 
-    await bot.send_message(message.from_user.id, "Welcome to the admin panel!")
+async def start(message: types.Message):
+    await bot.send_message(
+        message.chat.id, "Bot is ready to work!", reply_markup=keyboard
+    )
+
+
+async def answer(webAppMes):
+    await bot.send_message(
+        webAppMes.chat.id,
+        f"получили информацию из веб-приложения: {webAppMes.web_app_data.data}",
+    )
+    # отправляем сообщение в ответ на отправку данных из веб-приложения
 
 
 async def get_user_data(user_id):
@@ -303,7 +299,6 @@ async def process_simple_calendar(callback_query: CallbackQuery, callback_data: 
         callback_query, callback_data
     )
     user = callback_query.from_user
-    # date_str = date.strftime("%d/%m")
     chat_id = callback_query.message.chat.id
 
     if selected:
@@ -377,115 +372,86 @@ async def add_holiday_to_db(chat_id, holiday_name, callback_query, date):
     session.commit()
 
 
-async def schedule_task(schedule_time, callback):
-    print("schedule_task")
-    while True:
-        now = datetime.datetime.now()
-        schedule_time = now.replace(hour=11, minute=26, second=0, microsecond=0)
-        if now >= schedule_time:
-            # Calculate the next day's schedule time
-            next_day = now + datetime.timedelta(days=1)
-            next_schedule_time = next_day.replace(
-                hour=11, minute=26, second=0, microsecond=0
-            )
-            time_difference = (next_schedule_time - now).total_seconds()
+def set_connection_and_return_args():
+    image_params = {"kitty": "True", "Sparkles": "False"}
+    image_request = requests.get(
+        "https://well-wisher.onrender.com/image?prompt=holiday&kitty=true&Sparkles=true",
+        params=image_params,
+    )
+    text_params = {"holiday": "birthday"}
+    text_request = requests.get(
+        "https://well-wisher.onrender.com/greeting?holiday=birthday",
+        params=text_params,
+    )
+    random_text = text_request.text
+    random_image_url = image_request.text
 
-            # Run the task
-            await callback()
+    response_data_text = json.loads(random_text)
+    response_data_image = json.loads(random_image_url)
 
-            # Wait until the next day to schedule the task again
-            await asyncio.sleep(time_difference)
-        else:
-            # Wait for 1 minute and check again
-            await asyncio.sleep(60)
+    return response_data_text, response_data_image
 
-
-inspector = inspect(engine)
 
 async def send_birthday_congratulations():
-    today = ".".join(str(datetime.date.today()).split('-')[1:])
-    tables = metadata.tables.keys()
+    today = ".".join(str(datetime.date.today()).split("-")[1:])
 
-    table_names = inspector.get_table_names()
+    tables = INSPECTOR.get_table_names()
 
-    for table_name in table_names:
+    for table_name in tables:
         if table_name.startswith("table_"):
-
             table = Table(table_name, metadata, autoload_with=engine)
-
-            # select_query = table.select().where(
-            #     func.split(table.c.date, " ")[0] == today.strftime("%Y-%m-%d")
-            # )
-            # select_query = table.select().where(
-            #     table.c.date == today.strftime("%Y-%m-%d")
-            # )
-            # select_query = table.select()
 
             select_query = select(table)
 
             result = session.execute(select_query)
-            print(select_query)
 
-            result = session.execute(select_query)
-            # result = await engine.execute(query)
             rows = result.fetchall()
 
             for row in rows:
-                date = ".".join(row[2].split()[0].split('-')[1:])
+                date = ".".join(row[2].split()[0].split("-")[1:])
                 if date == today:
-                    if row[1] == '1':
+                    if row[1] == "1":
                         chat_id = int(table_name.split("_")[1])
                         user_data = await get_user_data(row[0])
-                        message = f"Happy birthday, {user_data['username']}! 🎉🎂"
-                        await bot.send_message(chat_id, message)
+                        holiday_message = (
+                            f"С Днем Рождения, @{user_data['username']}! 🎉🎂"
+                        )
 
-                    elif row[1] == '0':
-                        message = f"Today is {row[0]}!"
-                        await bot.send_message(chat_id, message)
+                        (
+                            response_data_text,
+                            response_data_image,
+                        ) = set_connection_and_return_args()
 
+                        random_image_url = response_data_image["data"][0]["url"]
 
-@dp.message_handler(commands=["fetch_data"])
-async def fetch_data_handler(message: types.Message):
-    users = session.query().all()
-    print(users)
-    for user in users:
-        # Perform your desired actions with the user data
-        user_id = user.id
-        user_name = user.name
-        await message.answer(f"User ID: {user_id}, Name: {user_name}")
+                        random_text = response_data_text["choices"][0]["text"]
 
+                        random_image_hyperlink = (
+                            f"[Link to the picture^]({random_image_url})"
+                        )
 
-# @dp.message_handler(commands=['start'])
-async def run_infinity_loop(message: types.Message):
-    while True:
-        await asyncio.sleep(1)
-        await bot.send_message(message.from_user.id, "Hello!")
+                        total_congratulation = (
+                                holiday_message
+                                + "\n"
+                                + random_text
+                                + "\n"
+                                + "\n"
+                                + random_image_hyperlink
+                        )
+                        await bot.send_message(
+                            chat_id, total_congratulation, parse_mode="Markdown"
+                        )
 
+                    elif row[1] == "0":
+                        chat_id = int(table_name.split("_")[1])
+                        holiday_message = f"Today is {row[0]}!"
 
-
-
-
-async def iterate_tables():
-    # Get all table names
-    table_names = inspector.get_table_names()
-
-    for table_name in table_names:
-        # Perform actions or retrieve data for each table
-        # For example, you can print the table name:
-        print("Table Name:", table_name)
-
-
-async def run_send_birthday_congratulations(message: types.Message):
-    while True:
-        # print("Заходит")
-        await send_birthday_congratulations()
-        await asyncio.sleep(30)
+                        await bot.send_message(chat_id, holiday_message)
 
 
 def register_handlers(dp: Dispatcher):
-    # dp.register_message_handler(admin_panel, commands='settings')
-    dp.register_message_handler(start_handler, commands="start")
-    dp.register_message_handler(run_send_birthday_congratulations, commands="register")
+    dp.register_message_handler(start, commands="start")
+    dp.register_message_handler(start_handler, commands="start_chat")
     dp.register_message_handler(add_birthday, commands="add_birthday")
     dp.register_message_handler(add_holiday, commands="add_holiday")
     dp.register_message_handler(delete_birthday, commands="delete_birthday")
@@ -495,3 +461,4 @@ def register_handlers(dp: Dispatcher):
     dp.register_message_handler(get_birthday, commands="get_birthday")
     dp.register_message_handler(get_holiday, commands="get_holiday")
     dp.register_message_handler(get_today, commands="get_today")
+    dp.register_message_handler(answer, content_types="web_app_data")
