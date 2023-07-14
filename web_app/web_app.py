@@ -1,7 +1,5 @@
 from browser import document, html, window
 
-from bot_create import bot
-
 # main doby
 main = html.DIV(id="main")
 

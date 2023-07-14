@@ -3449,3 +3449,868 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 12:16:21 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 12:17:20 MSK)" executed successfully
 12:16:26 aiogram.dispatcher.dispatcher INFO Stop polling...
 12:16:26 aiogram WARNING Goodbye!
+13:08:48 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:08:48 aiogram WARNING Updates were skipped successfully.
+13:08:48 root INFO Bot is starting...
+13:08:48 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:08:48 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:08:48 apscheduler.scheduler INFO Scheduler started
+13:08:48 aiogram.dispatcher.dispatcher INFO Start polling.
+13:09:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:10:48 MSK)" (scheduled at 2023-07-14 13:09:48.449042+03:00)
+13:09:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:10:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:10:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:11:48 MSK)" (scheduled at 2023-07-14 13:10:48.449042+03:00)
+13:10:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:11:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:11:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:12:48 MSK)" (scheduled at 2023-07-14 13:11:48.449042+03:00)
+13:11:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:12:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:12:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:13:48 MSK)" (scheduled at 2023-07-14 13:12:48.449042+03:00)
+13:12:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:13:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:13:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:14:48 MSK)" (scheduled at 2023-07-14 13:13:48.449042+03:00)
+13:13:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:14:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:14:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:15:48 MSK)" (scheduled at 2023-07-14 13:14:48.449042+03:00)
+13:14:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:15:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:15:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:16:48 MSK)" (scheduled at 2023-07-14 13:15:48.449042+03:00)
+13:15:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:16:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:16:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:17:48 MSK)" (scheduled at 2023-07-14 13:16:48.449042+03:00)
+13:16:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:17:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:17:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:18:48 MSK)" (scheduled at 2023-07-14 13:17:48.449042+03:00)
+13:17:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:18:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:18:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:19:48 MSK)" (scheduled at 2023-07-14 13:18:48.449042+03:00)
+13:18:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:19:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:19:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:20:48 MSK)" (scheduled at 2023-07-14 13:19:48.449042+03:00)
+13:19:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:20:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:20:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:21:48 MSK)" (scheduled at 2023-07-14 13:20:48.449042+03:00)
+13:20:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:21:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    )
+      
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:21:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:22:48 MSK)" (scheduled at 2023-07-14 13:21:48.449042+03:00)
+13:21:51 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:22:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    )
+      
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:22:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:23:48 MSK)" (scheduled at 2023-07-14 13:22:48.449042+03:00)
+13:22:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:23:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    )
+      
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:23:48 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:24:48 MSK)" (scheduled at 2023-07-14 13:23:48.449042+03:00)
+13:23:50 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:24:48 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 423, in send_birthday_congratulations
+    )
+      
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 389, in set_connection_and_return_args
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:24:45 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:24:45 aiogram WARNING Goodbye!
+13:24:49 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:24:49 aiogram WARNING Updates were skipped successfully.
+13:24:49 root INFO Bot is starting...
+13:24:49 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:24:49 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:24:49 apscheduler.scheduler INFO Scheduler started
+13:24:49 aiogram.dispatcher.dispatcher INFO Start polling.
+13:25:49 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:26:49 MSK)" (scheduled at 2023-07-14 13:25:49.612842+03:00)
+13:25:51 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:26:49 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:26:49 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:27:49 MSK)" (scheduled at 2023-07-14 13:26:49.612842+03:00)
+13:26:51 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:27:49 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:27:01 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:27:01 aiogram WARNING Goodbye!
+13:38:41 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:38:42 aiogram WARNING Updates were skipped successfully.
+13:38:42 root INFO Bot is starting...
+13:38:42 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:38:42 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:38:42 apscheduler.scheduler INFO Scheduler started
+13:38:42 aiogram.dispatcher.dispatcher INFO Start polling.
+13:39:42 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:40:42 MSK)" (scheduled at 2023-07-14 13:39:42.414019+03:00)
+13:39:44 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:40:42 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:40:42 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:41:42 MSK)" (scheduled at 2023-07-14 13:40:42.414019+03:00)
+13:40:45 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:41:42 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:41:42 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:42:42 MSK)" (scheduled at 2023-07-14 13:41:42.414019+03:00)
+13:41:44 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:42:42 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:42:42 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:43:42 MSK)" (scheduled at 2023-07-14 13:42:42.414019+03:00)
+13:42:44 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:43:42 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:43:42 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:44:42 MSK)" (scheduled at 2023-07-14 13:43:42.414019+03:00)
+13:43:46 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:44:42 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:44:42 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:45:42 MSK)" (scheduled at 2023-07-14 13:44:42.414019+03:00)
+13:44:44 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:45:42 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:45:42 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:46:42 MSK)" (scheduled at 2023-07-14 13:45:42.414019+03:00)
+13:45:46 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:46:42 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:46:42 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:47:42 MSK)" (scheduled at 2023-07-14 13:46:42.414019+03:00)
+13:46:43 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:47:42 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:47:42 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:48:42 MSK)" (scheduled at 2023-07-14 13:47:42.414019+03:00)
+13:47:44 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:48:42 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:48:42 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:49:42 MSK)" (scheduled at 2023-07-14 13:48:42.414019+03:00)
+13:48:44 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:49:42 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:48:52 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:48:52 aiogram WARNING Goodbye!
+13:48:57 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:48:58 aiogram WARNING Updates were skipped successfully.
+13:48:58 root INFO Bot is starting...
+13:48:58 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:48:58 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:48:58 apscheduler.scheduler INFO Scheduler started
+13:48:58 aiogram.dispatcher.dispatcher INFO Start polling.
+13:49:31 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:49:31 aiogram WARNING Goodbye!
+13:50:19 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:50:19 aiogram WARNING Updates were skipped successfully.
+13:50:19 root INFO Bot is starting...
+13:50:20 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:50:20 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:50:20 apscheduler.scheduler INFO Scheduler started
+13:50:20 aiogram.dispatcher.dispatcher INFO Start polling.
+13:51:20 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:52:20 MSK)" (scheduled at 2023-07-14 13:51:20.194176+03:00)
+13:51:22 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:52:20 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:52:20 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:53:20 MSK)" (scheduled at 2023-07-14 13:52:20.194176+03:00)
+13:52:22 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:53:20 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:53:20 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:54:20 MSK)" (scheduled at 2023-07-14 13:53:20.194176+03:00)
+13:53:22 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:54:20 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:54:20 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:55:20 MSK)" (scheduled at 2023-07-14 13:54:20.194176+03:00)
+13:54:22 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:55:20 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:55:20 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:56:20 MSK)" (scheduled at 2023-07-14 13:55:20.194176+03:00)
+13:55:22 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 13:56:20 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+13:55:24 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:55:24 aiogram WARNING Goodbye!
+14:03:07 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+14:03:07 aiogram WARNING Updates were skipped successfully.
+14:03:07 root INFO Bot is starting...
+14:03:07 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+14:03:07 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+14:03:07 apscheduler.scheduler INFO Scheduler started
+14:03:07 aiogram.dispatcher.dispatcher INFO Start polling.
+14:04:07 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:05:07 MSK)" (scheduled at 2023-07-14 14:04:07.902243+03:00)
+14:04:10 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:05:07 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+14:05:07 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:06:07 MSK)" (scheduled at 2023-07-14 14:05:07.902243+03:00)
+14:05:09 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:06:07 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+14:06:07 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:07:07 MSK)" (scheduled at 2023-07-14 14:06:07.902243+03:00)
+14:06:10 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:07:07 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+14:07:07 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:08:07 MSK)" (scheduled at 2023-07-14 14:07:07.902243+03:00)
+14:07:10 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:08:07 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+14:08:07 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:09:07 MSK)" (scheduled at 2023-07-14 14:08:07.902243+03:00)
+14:08:11 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:09:07 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+14:09:07 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:10:07 MSK)" (scheduled at 2023-07-14 14:09:07.902243+03:00)
+14:09:10 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:10:07 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+14:10:07 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:11:07 MSK)" (scheduled at 2023-07-14 14:10:07.902243+03:00)
+14:10:10 apscheduler.executors.default ERROR Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-14 14:11:07 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 415, in send_birthday_congratulations
+    ) = set_connection_and_return_args()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 381, in set_connection_and_return_args
+    response_data_text = json.loads(random_text)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+14:10:14 aiogram.dispatcher.dispatcher INFO Stop polling...
+14:10:14 aiogram WARNING Goodbye!
