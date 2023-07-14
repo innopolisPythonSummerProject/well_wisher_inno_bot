@@ -10,7 +10,7 @@ from sqlalchemy import String, Table, cast, func, inspect, select
 from app.database import engine, metadata, session
 from app.keyboard import keyboard
 from app.models import ChatTable, Holiday
-from bot_create import bot, dp
+from creation import bot, dp
 
 holiday = Holiday()
 
@@ -21,14 +21,6 @@ async def start(message: types.Message):
     await bot.send_message(
         message.chat.id, "Bot is ready to work!", reply_markup=keyboard
     )
-
-
-async def answer(webAppMes):
-    await bot.send_message(
-        webAppMes.chat.id,
-        f"получили информацию из веб-приложения: {webAppMes.web_app_data.data}",
-    )
-    # отправляем сообщение в ответ на отправку данных из веб-приложения
 
 
 async def get_user_data(user_id):
@@ -449,6 +441,11 @@ async def send_birthday_congratulations():
                         await bot.send_message(chat_id, holiday_message)
 
 
+@dp.message_handler(content_types='web_app_data')
+async def get_data(web_app_message):
+    await bot.send_message(chat_id=web_app_message.chat.id, text=web_app_message)
+
+
 def register_handlers(dp: Dispatcher):
     dp.register_message_handler(start, commands="start")
     dp.register_message_handler(start_handler, commands="start_chat")
@@ -461,4 +458,3 @@ def register_handlers(dp: Dispatcher):
     dp.register_message_handler(get_birthday, commands="get_birthday")
     dp.register_message_handler(get_holiday, commands="get_holiday")
     dp.register_message_handler(get_today, commands="get_today")
-    dp.register_message_handler(answer, content_types="web_app_data")

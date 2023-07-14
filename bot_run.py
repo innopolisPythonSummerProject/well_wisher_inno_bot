@@ -8,7 +8,7 @@ from dotenv import find_dotenv, load_dotenv
 from app import handlers
 from app.handlers import send_birthday_congratulations
 from app.set_bot_commands import set_default_commands
-from bot_create import dp
+from creation import dp
 
 load_dotenv(find_dotenv())
 
