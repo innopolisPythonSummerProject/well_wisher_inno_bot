@@ -441,6 +441,7 @@ async def send_birthday_congratulations():
                         await bot.send_message(chat_id, holiday_message)
 
 
+
 @dp.message_handler(content_types='web_app_data')
 async def get_data(web_app_message):
     await bot.send_message(chat_id=web_app_message.chat.id, text=web_app_message)
