@@ -5741,3 +5741,23 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 22:50:39 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:00:30], next run at: 2023-07-15 22:51:09 MSK)" executed successfully
 22:51:03 aiogram.dispatcher.dispatcher INFO Stop polling...
 22:51:03 aiogram WARNING Goodbye!
+23:12:44 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+23:12:45 aiogram WARNING Updates were skipped successfully.
+23:12:45 root INFO Bot is starting...
+23:12:45 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+23:12:45 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+23:12:45 apscheduler.scheduler INFO Scheduler started
+23:12:45 aiogram.dispatcher.dispatcher INFO Start polling.
+23:13:15 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:00:30], next run at: 2023-07-15 23:13:45 MSK)" (scheduled at 2023-07-15 23:13:15.370744+03:00)
+23:13:15 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:00:30], next run at: 2023-07-15 23:13:45 MSK)" executed successfully
+23:13:45 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:00:30], next run at: 2023-07-15 23:14:15 MSK)" (scheduled at 2023-07-15 23:13:45.370744+03:00)
+23:14:42 apscheduler.scheduler WARNING Execution of job "send_birthday_congratulations (trigger: interval[0:00:30], next run at: 2023-07-15 23:14:15 MSK)" skipped: maximum number of running instances reached (1)
+23:14:43 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:00:30], next run at: 2023-07-15 23:14:45 MSK)" executed successfully
+23:14:45 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:00:30], next run at: 2023-07-15 23:15:15 MSK)" (scheduled at 2023-07-15 23:14:45.370744+03:00)
+23:14:59 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:00:30], next run at: 2023-07-15 23:15:15 MSK)" executed successfully
+23:15:05 aiogram.dispatcher.dispatcher INFO Stop polling...
+23:15:05 aiogram WARNING Goodbye!
+23:15:08 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+23:15:08 aiogram WARNING Updates were skipped successfully.
+23:15:08 root INFO Bot is starting...
+23:15:08 aiogram WARNING Goodbye!

@@ -423,12 +423,12 @@ async def send_birthday_congratulations():
                         )
 
                         total_congratulation = (
-                                holiday_message
-                                + "\n"
-                                + random_text
-                                + "\n"
-                                + "\n"
-                                + random_image_hyperlink
+                            holiday_message
+                            + "\n"
+                            + random_text
+                            + "\n"
+                            + "\n"
+                            + random_image_hyperlink
                         )
                         await bot.send_message(
                             chat_id, total_congratulation, parse_mode="Markdown"

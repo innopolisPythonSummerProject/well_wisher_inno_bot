@@ -19,7 +19,7 @@ async def on_startup(dp):
 
     # Send the keyboard to the user
     scheduler = AsyncIOScheduler()
-    scheduler.add_job(send_birthday_congratulations, "interval", seconds=30)
+    scheduler.add_job(send_birthday_congratulations, "interval", day=1)
     scheduler.start()
 
 
