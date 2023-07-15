@@ -4314,3 +4314,392 @@ Traceback (most recent call last):
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 14:10:14 aiogram.dispatcher.dispatcher INFO Stop polling...
 14:10:14 aiogram WARNING Goodbye!
+13:25:04 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:25:04 aiogram WARNING Updates were skipped successfully.
+13:25:04 root INFO Bot is starting...
+13:25:05 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:25:05 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:25:05 apscheduler.scheduler INFO Scheduler started
+13:25:05 aiogram.dispatcher.dispatcher INFO Start polling.
+13:26:05 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:27:05 MSK)" (scheduled at 2023-07-15 13:26:05.126107+03:00)
+13:26:05 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:27:05 MSK)" executed successfully
+13:27:05 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:28:05 MSK)" (scheduled at 2023-07-15 13:27:05.126107+03:00)
+13:27:05 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:28:05 MSK)" executed successfully
+13:28:05 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:29:05 MSK)" (scheduled at 2023-07-15 13:28:05.126107+03:00)
+13:28:49 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:29:05 MSK)" executed successfully
+13:29:05 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:30:05 MSK)" (scheduled at 2023-07-15 13:29:05.126107+03:00)
+13:29:19 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:30:05 MSK)" executed successfully
+13:29:56 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:29:56 aiogram WARNING Goodbye!
+13:30:00 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:30:00 aiogram WARNING Updates were skipped successfully.
+13:30:00 root INFO Bot is starting...
+13:30:00 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:30:00 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:30:00 apscheduler.scheduler INFO Scheduler started
+13:30:00 aiogram.dispatcher.dispatcher INFO Start polling.
+13:31:00 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:32:00 MSK)" (scheduled at 2023-07-15 13:31:00.928585+03:00)
+13:31:15 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:32:00 MSK)" executed successfully
+13:32:00 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:33:00 MSK)" (scheduled at 2023-07-15 13:32:00.928585+03:00)
+13:32:14 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:33:00 MSK)" executed successfully
+13:33:00 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:34:00 MSK)" (scheduled at 2023-07-15 13:33:00.928585+03:00)
+13:33:16 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:34:00 MSK)" executed successfully
+13:34:00 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:35:00 MSK)" (scheduled at 2023-07-15 13:34:00.928585+03:00)
+13:34:17 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:35:00 MSK)" executed successfully
+13:34:23 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:34:23 aiogram WARNING Goodbye!
+13:34:54 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:34:55 aiogram WARNING Updates were skipped successfully.
+13:34:55 root INFO Bot is starting...
+13:34:55 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:34:55 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:34:55 apscheduler.scheduler INFO Scheduler started
+13:34:55 aiogram.dispatcher.dispatcher INFO Start polling.
+13:35:55 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:36:55 MSK)" (scheduled at 2023-07-15 13:35:55.315738+03:00)
+13:36:08 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:36:55 MSK)" executed successfully
+13:36:55 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:37:55 MSK)" (scheduled at 2023-07-15 13:36:55.315738+03:00)
+13:37:08 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:37:55 MSK)" executed successfully
+13:37:55 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:38:55 MSK)" (scheduled at 2023-07-15 13:37:55.315738+03:00)
+13:37:55 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:38:55 MSK)" executed successfully
+13:38:55 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:39:55 MSK)" (scheduled at 2023-07-15 13:38:55.315738+03:00)
+13:38:55 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:39:55 MSK)" executed successfully
+13:39:55 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:40:55 MSK)" (scheduled at 2023-07-15 13:39:55.315738+03:00)
+13:39:55 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:40:55 MSK)" executed successfully
+13:40:55 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:41:55 MSK)" (scheduled at 2023-07-15 13:40:55.315738+03:00)
+13:40:55 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:41:55 MSK)" executed successfully
+13:40:59 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:40:59 aiogram WARNING Goodbye!
+13:47:15 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:47:15 aiogram WARNING Updates were skipped successfully.
+13:47:15 root INFO Bot is starting...
+13:47:15 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:47:15 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:47:15 apscheduler.scheduler INFO Scheduler started
+13:47:15 aiogram.dispatcher.dispatcher INFO Start polling.
+13:48:09 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('the JSON object must be str, bytes or bytearray, not Message')>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 446, in get_data
+    response_data = json.loads(web_app_message)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not Message
+13:48:15 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:49:15 MSK)" (scheduled at 2023-07-15 13:48:15.709180+03:00)
+13:48:15 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:49:15 MSK)" executed successfully
+13:48:36 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:48:36 aiogram WARNING Goodbye!
+13:48:39 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:48:39 aiogram WARNING Updates were skipped successfully.
+13:48:39 root INFO Bot is starting...
+13:48:39 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:48:39 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:48:39 apscheduler.scheduler INFO Scheduler started
+13:48:39 aiogram.dispatcher.dispatcher INFO Start polling.
+13:49:39 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:50:39 MSK)" (scheduled at 2023-07-15 13:49:39.580457+03:00)
+13:49:39 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:50:39 MSK)" executed successfully
+13:50:39 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:51:39 MSK)" (scheduled at 2023-07-15 13:50:39.580457+03:00)
+13:50:39 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:51:39 MSK)" executed successfully
+13:51:39 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:52:39 MSK)" (scheduled at 2023-07-15 13:51:39.580457+03:00)
+13:51:39 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:52:39 MSK)" executed successfully
+13:52:12 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-31' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('the JSON object must be str, bytes or bytearray, not Message')>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 447, in get_data
+    response_data = json.loads(web_app_message)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not Message
+13:52:39 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:53:39 MSK)" (scheduled at 2023-07-15 13:52:39.580457+03:00)
+13:52:39 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:53:39 MSK)" executed successfully
+13:53:39 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:54:39 MSK)" (scheduled at 2023-07-15 13:53:39.580457+03:00)
+13:53:39 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:54:39 MSK)" executed successfully
+13:54:24 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:54:24 aiogram WARNING Goodbye!
+13:54:27 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:54:27 aiogram WARNING Updates were skipped successfully.
+13:54:27 root INFO Bot is starting...
+13:54:28 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:54:28 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:54:28 apscheduler.scheduler INFO Scheduler started
+13:54:28 aiogram.dispatcher.dispatcher INFO Start polling.
+13:55:18 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:55:18 aiogram WARNING Goodbye!
+13:55:21 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:55:21 aiogram WARNING Updates were skipped successfully.
+13:55:21 root INFO Bot is starting...
+13:55:22 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:55:22 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:55:22 apscheduler.scheduler INFO Scheduler started
+13:55:22 aiogram.dispatcher.dispatcher INFO Start polling.
+13:56:13 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('the JSON object must be str, bytes or bytearray, not NoneType')>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 447, in get_data
+    response_data = json.loads(web_app_message.text)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+13:56:22 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:57:22 MSK)" (scheduled at 2023-07-15 13:56:22.193854+03:00)
+13:56:22 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:57:22 MSK)" executed successfully
+13:56:25 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:56:25 aiogram WARNING Goodbye!
+13:56:28 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:56:28 aiogram WARNING Updates were skipped successfully.
+13:56:28 root INFO Bot is starting...
+13:56:28 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:56:28 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:56:28 apscheduler.scheduler INFO Scheduler started
+13:56:28 aiogram.dispatcher.dispatcher INFO Start polling.
+13:57:20 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('the JSON object must be str, bytes or bytearray, not NoneType')>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 447, in get_data
+    response_data = json.loads(web_app_message.text)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lekht\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+13:57:28 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:58:28 MSK)" (scheduled at 2023-07-15 13:57:28.799075+03:00)
+13:57:28 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:58:28 MSK)" executed successfully
+13:57:54 aiogram.dispatcher.dispatcher INFO Stop polling...
+13:57:54 aiogram WARNING Goodbye!
+13:57:56 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+13:57:56 aiogram WARNING Updates were skipped successfully.
+13:57:56 root INFO Bot is starting...
+13:57:56 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+13:57:56 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+13:57:56 apscheduler.scheduler INFO Scheduler started
+13:57:56 aiogram.dispatcher.dispatcher INFO Start polling.
+13:58:56 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:59:56 MSK)" (scheduled at 2023-07-15 13:58:56.844988+03:00)
+13:58:56 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 13:59:56 MSK)" executed successfully
+13:59:56 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:00:56 MSK)" (scheduled at 2023-07-15 13:59:56.844988+03:00)
+13:59:56 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:00:56 MSK)" executed successfully
+14:00:56 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:01:56 MSK)" (scheduled at 2023-07-15 14:00:56.844988+03:00)
+14:00:56 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:01:56 MSK)" executed successfully
+14:01:56 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:02:56 MSK)" (scheduled at 2023-07-15 14:01:56.844988+03:00)
+14:01:56 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:02:56 MSK)" executed successfully
+14:02:56 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:03:56 MSK)" (scheduled at 2023-07-15 14:02:56.844988+03:00)
+14:02:56 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:03:56 MSK)" executed successfully
+14:03:56 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:04:56 MSK)" (scheduled at 2023-07-15 14:03:56.844988+03:00)
+14:03:56 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:04:56 MSK)" executed successfully
+14:04:33 aiogram.dispatcher.dispatcher INFO Stop polling...
+14:04:33 aiogram WARNING Goodbye!
+14:04:36 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+14:04:36 aiogram WARNING Updates were skipped successfully.
+14:04:36 root INFO Bot is starting...
+14:04:36 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+14:04:36 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+14:04:36 apscheduler.scheduler INFO Scheduler started
+14:04:36 aiogram.dispatcher.dispatcher INFO Start polling.
+14:05:29 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("string indices must be integers, not 'str'")>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 449, in get_data
+    image_url = web_app_message["web_app_data"]["data"]["picture_src"]
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+14:05:36 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:06:36 MSK)" (scheduled at 2023-07-15 14:05:36.549107+03:00)
+14:05:36 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:06:36 MSK)" executed successfully
+14:06:36 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:07:36 MSK)" (scheduled at 2023-07-15 14:06:36.549107+03:00)
+14:06:36 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:07:36 MSK)" executed successfully
+14:07:36 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:08:36 MSK)" (scheduled at 2023-07-15 14:07:36.549107+03:00)
+14:07:36 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:08:36 MSK)" executed successfully
+14:08:24 aiogram.dispatcher.dispatcher INFO Stop polling...
+14:08:24 aiogram WARNING Goodbye!
+14:09:14 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+14:09:14 aiogram WARNING Updates were skipped successfully.
+14:09:14 root INFO Bot is starting...
+14:09:15 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+14:09:15 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+14:09:15 apscheduler.scheduler INFO Scheduler started
+14:09:15 aiogram.dispatcher.dispatcher INFO Start polling.
+14:10:15 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:11:15 MSK)" (scheduled at 2023-07-15 14:10:15.222674+03:00)
+14:10:15 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:11:15 MSK)" executed successfully
+14:10:53 aiogram.dispatcher.dispatcher INFO Stop polling...
+14:10:53 aiogram WARNING Goodbye!
+14:10:56 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+14:10:56 aiogram WARNING Updates were skipped successfully.
+14:10:56 root INFO Bot is starting...
+14:10:56 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+14:10:56 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+14:10:56 apscheduler.scheduler INFO Scheduler started
+14:10:56 aiogram.dispatcher.dispatcher INFO Start polling.
+14:11:56 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:12:56 MSK)" (scheduled at 2023-07-15 14:11:56.454174+03:00)
+14:11:56 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:12:56 MSK)" executed successfully
+14:12:56 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:13:56 MSK)" (scheduled at 2023-07-15 14:12:56.454174+03:00)
+14:12:56 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:13:56 MSK)" executed successfully
+14:13:33 aiogram.dispatcher.dispatcher INFO Stop polling...
+14:13:33 aiogram WARNING Goodbye!
+14:13:35 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+14:13:35 aiogram WARNING Updates were skipped successfully.
+14:13:35 root INFO Bot is starting...
+14:13:35 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+14:13:35 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+14:13:35 apscheduler.scheduler INFO Scheduler started
+14:13:35 aiogram.dispatcher.dispatcher INFO Start polling.
+14:14:05 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyError('picturesrc')>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 451, in get_data
+    image_url = data_json['picturesrc']
+                ~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'picturesrc'
+14:14:26 aiogram.dispatcher.dispatcher INFO Stop polling...
+14:14:26 aiogram WARNING Goodbye!
+14:14:29 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+14:14:29 aiogram WARNING Updates were skipped successfully.
+14:14:29 root INFO Bot is starting...
+14:14:29 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+14:14:29 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+14:14:29 apscheduler.scheduler INFO Scheduler started
+14:14:29 aiogram.dispatcher.dispatcher INFO Start polling.
+14:15:16 asyncio ERROR Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyError('picturesrc')>
+Traceback (most recent call last):
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Studying\Python\well_wisher_inno_bot\app\handlers.py", line 452, in get_data
+    image_url = data_json['picturesrc']
+                ~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'picturesrc'
+14:15:29 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:16:29 MSK)" (scheduled at 2023-07-15 14:15:29.619730+03:00)
+14:15:29 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:16:29 MSK)" executed successfully
+14:15:35 aiogram.dispatcher.dispatcher INFO Stop polling...
+14:15:35 aiogram WARNING Goodbye!
+14:15:37 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+14:15:38 aiogram WARNING Updates were skipped successfully.
+14:15:38 root INFO Bot is starting...
+14:15:38 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+14:15:38 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+14:15:38 apscheduler.scheduler INFO Scheduler started
+14:15:38 aiogram.dispatcher.dispatcher INFO Start polling.
+14:16:38 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:17:38 MSK)" (scheduled at 2023-07-15 14:16:38.328263+03:00)
+14:16:38 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:17:38 MSK)" executed successfully
+14:17:20 aiogram.dispatcher.dispatcher INFO Stop polling...
+14:17:20 aiogram WARNING Goodbye!
+14:17:24 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+14:17:24 aiogram WARNING Updates were skipped successfully.
+14:17:24 root INFO Bot is starting...
+14:17:25 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+14:17:25 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+14:17:25 apscheduler.scheduler INFO Scheduler started
+14:17:25 aiogram.dispatcher.dispatcher INFO Start polling.
+14:17:30 aiogram.dispatcher.dispatcher INFO Stop polling...
+14:17:30 aiogram WARNING Goodbye!
+14:17:33 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+14:17:33 aiogram WARNING Updates were skipped successfully.
+14:17:33 root INFO Bot is starting...
+14:17:33 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+14:17:33 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+14:17:33 apscheduler.scheduler INFO Scheduler started
+14:17:33 aiogram.dispatcher.dispatcher INFO Start polling.
+14:18:33 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:19:33 MSK)" (scheduled at 2023-07-15 14:18:33.720969+03:00)
+14:18:33 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:19:33 MSK)" executed successfully
+14:19:33 apscheduler.executors.default INFO Running job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:20:33 MSK)" (scheduled at 2023-07-15 14:19:33.720969+03:00)
+14:19:33 apscheduler.executors.default INFO Job "send_birthday_congratulations (trigger: interval[0:01:00], next run at: 2023-07-15 14:20:33 MSK)" executed successfully

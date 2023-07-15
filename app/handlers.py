@@ -406,7 +406,7 @@ async def send_birthday_congratulations():
                         chat_id = int(table_name.split("_")[1])
                         user_data = await get_user_data(row[0])
                         holiday_message = (
-                            f"С Днем Рождения, @{user_data['username']}! 🎉🎂"
+                            f"Happy birthday, @{user_data['username']}! 🎉🎂"
                         )
 
                         (
@@ -423,12 +423,12 @@ async def send_birthday_congratulations():
                         )
 
                         total_congratulation = (
-                                holiday_message
-                                + "\n"
-                                + random_text
-                                + "\n"
-                                + "\n"
-                                + random_image_hyperlink
+                            holiday_message
+                            + "\n"
+                            + random_text
+                            + "\n"
+                            + "\n"
+                            + random_image_hyperlink
                         )
                         await bot.send_message(
                             chat_id, total_congratulation, parse_mode="Markdown"
@@ -441,10 +441,22 @@ async def send_birthday_congratulations():
                         await bot.send_message(chat_id, holiday_message)
 
 
-
-@dp.message_handler(content_types='web_app_data')
+@dp.message_handler(content_types="web_app_data")
 async def get_data(web_app_message):
-    await bot.send_message(chat_id=web_app_message.chat.id, text=web_app_message)
+    data = web_app_message["web_app_data"]["data"]
+    data_json = json.loads(data)
+    image_url = data_json["picture_src"]
+    text = data_json["text_content"]
+
+    image_hyperlink = f"[Link to the picture^]({image_url})"
+
+    total_congratulation = text + "\n" + image_hyperlink
+
+    await bot.send_message(
+        chat_id=web_app_message.chat.id,
+        text=total_congratulation,
+        parse_mode="Markdown",
+    )
 
 
 def register_handlers(dp: Dispatcher):
