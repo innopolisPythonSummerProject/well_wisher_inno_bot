@@ -1995,24 +1995,3 @@ Traceback (most recent call last):
   File "C:\Users\milan\OneDrive\���������\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiohttp\helpers.py", line 721, in __exit__
     raise asyncio.TimeoutError from None
 asyncio.exceptions.TimeoutError
-17:27:43 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
-17:27:43 aiogram WARNING Updates were skipped successfully.
-17:27:43 root INFO Bot is starting...
-17:27:44 aiogram.dispatcher.dispatcher INFO Start polling.
-17:27:47 aiogram.dispatcher.dispatcher ERROR Cause exception while getting updates.
-Traceback (most recent call last):
-  File "C:\Users\milan\OneDrive\���������\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
-    updates = await self.bot.get_updates(
-  File "C:\Users\milan\OneDrive\���������\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
-    result = await self.request(api.Methods.GET_UPDATES, payload)
-  File "C:\Users\milan\OneDrive\���������\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
-    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
-  File "C:\Users\milan\OneDrive\���������\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
-    return check_result(method, response.content_type, response.status, await response.text())
-  File "C:\Users\milan\OneDrive\���������\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
-    exceptions.ConflictError.detect(description)
-  File "C:\Users\milan\OneDrive\���������\Innopolis_studying\1_year\2_sem\well_wisher_inno_bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
-    raise err(cls.text or description)
-aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
-17:27:54 aiogram.dispatcher.dispatcher INFO Stop polling...
-17:27:54 aiogram WARNING Goodbye!
