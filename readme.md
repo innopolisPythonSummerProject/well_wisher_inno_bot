@@ -13,7 +13,7 @@ artificial intelligence. Moreover, you can also receive the congratulations in p
 ## How to use
 
 1. Group functionality
-    - Add this bot in any chat, type ```/start_button``` command
+    - Add this bot in any chat, type ```/start_chat``` command
     - Get the list of possible commands by typing ```/``` in the chat, use any of them
 2. Private chat functionality
     - You can use our bot via WebApp, to call it just type ```/start``` and press the button "Web App"
