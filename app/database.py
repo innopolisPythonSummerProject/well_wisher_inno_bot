@@ -1,3 +1,4 @@
+"""Create the connection with the database"""
 from sqlalchemy import MetaData, create_engine
 from sqlalchemy.orm import sessionmaker
 

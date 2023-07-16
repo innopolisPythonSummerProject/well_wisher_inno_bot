@@ -13,14 +13,18 @@ from creation import dp
 load_dotenv(find_dotenv())
 
 
+def specify_schedule():
+    """Add schedule task that works asynchronously"""
+    scheduler = AsyncIOScheduler()
+    scheduler.add_job(send_birthday_congratulations, "interval", days=1)
+    scheduler.start()
+
+
 async def on_startup(dp):
+    """Runs when the bot is starting"""
     logging.info("Bot is starting...")
     await set_default_commands(dp)
-
-    # Send the keyboard to the user
-    scheduler = AsyncIOScheduler()
-    scheduler.add_job(send_birthday_congratulations, "interval", day=1)
-    scheduler.start()
+    specify_schedule()
 
 
 if __name__ == "__main__":
@@ -30,7 +34,6 @@ if __name__ == "__main__":
         datefmt="%H:%M:%S",
         level=logging.INFO,
     )
-    logging.getLogger().addHandler(logging.StreamHandler())
-    storage = MemoryStorage()
-    handlers.register_handlers(dp)
+    logging.getLogger().addHandler(logging.StreamHandler()) # Logging
+    handlers.register_handlers(dp) # Register handlers
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)

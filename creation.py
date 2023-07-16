@@ -1,3 +1,4 @@
+"""Contains bot and WebApp instance"""
 import os
 
 from aiogram import Bot

@@ -5761,3 +5761,16 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 23:15:08 aiogram WARNING Updates were skipped successfully.
 23:15:08 root INFO Bot is starting...
 23:15:08 aiogram WARNING Goodbye!
+11:27:33 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+11:27:33 aiogram WARNING Updates were skipped successfully.
+11:27:33 root INFO Bot is starting...
+11:27:33 aiogram WARNING Goodbye!
+11:28:00 aiogram INFO Bot: Well Wisher Bot [@well_wisher_inno_bot]
+11:28:00 aiogram WARNING Updates were skipped successfully.
+11:28:00 root INFO Bot is starting...
+11:28:01 apscheduler.scheduler INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+11:28:01 apscheduler.scheduler INFO Added job "send_birthday_congratulations" to job store "default"
+11:28:01 apscheduler.scheduler INFO Scheduler started
+11:28:01 aiogram.dispatcher.dispatcher INFO Start polling.
+11:28:12 aiogram.dispatcher.dispatcher INFO Stop polling...
+11:28:12 aiogram WARNING Goodbye!

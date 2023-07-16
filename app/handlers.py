@@ -1,3 +1,5 @@
+"""All handlers within the bot"""
+
 import datetime
 import json
 
@@ -18,12 +20,14 @@ INSPECTOR = inspect(engine)
 
 
 async def start(message: types.Message):
+    """Needed with WebApp interaction"""
     await bot.send_message(
         message.chat.id, "Bot is ready to work!", reply_markup=keyboard
     )
 
 
 async def get_user_data(user_id):
+    """Return data about user based on its id"""
     user = await bot.get_chat(user_id)
     user_data = {
         "id": user.id,
@@ -35,6 +39,7 @@ async def get_user_data(user_id):
 
 
 async def start_handler(message: types.Message):
+    """Register chat in the database, create a table"""
     # Получаем идентификатор чата
     chat_id = message.chat.id
 
@@ -46,10 +51,10 @@ async def start_handler(message: types.Message):
 
 
 async def add_birthday(message: types.Message):
+    """Calls the calendar to specify the date of the birthday"""
     chat_id = message.chat.id
 
     data_from_user = message.text.split(" ")
-    print(data_from_user)
 
     holiday.is_birthday = True
 
@@ -59,6 +64,7 @@ async def add_birthday(message: types.Message):
 
 
 async def delete_birthday(message: types.Message):
+    """Delete birthday from the database"""
     chat_id = message.chat.id
 
     table_name = f"table_{chat_id}"
@@ -80,8 +86,8 @@ async def delete_birthday(message: types.Message):
 
 
 async def get_birthday(message: types.Message):
+    """Get birthday date by specifying user`s Telegram alias"""
     data_from_user = message.text.split(" ")
-    print(data_from_user)
     entered_username = " ".join(data_from_user[1:]).strip()
 
     if not entered_username:
@@ -117,6 +123,7 @@ async def get_birthday(message: types.Message):
 
 
 async def get_all_birthdays(message: types.Message):
+    """Get list of all birthdays"""
     chat_id = message.chat.id
 
     table_name = f"table_{chat_id}"
@@ -138,6 +145,7 @@ async def get_all_birthdays(message: types.Message):
 
 
 async def get_all_holidays(message: types.Message):
+    """Get list of all holidays"""
     chat_id = message.chat.id
 
     table_name = f"table_{chat_id}"
@@ -157,8 +165,8 @@ async def get_all_holidays(message: types.Message):
 
 
 async def get_holiday(message: types.Message):
+    """Get holiday by its name"""
     data_from_user = message.text.split(" ")
-    print(data_from_user)
     entered_holiday = " ".join(data_from_user[1:]).strip()
 
     if not entered_holiday:
@@ -194,6 +202,7 @@ async def get_holiday(message: types.Message):
 
 
 async def add_holiday(message: types.Message):
+    """Calls the calendar to specify the date of the holiday"""
     data_from_user = message.text.split(" ")
     print(data_from_user)
 
@@ -212,9 +221,8 @@ async def add_holiday(message: types.Message):
 
 
 async def delete_holiday(message: types.Message):
-    data_from_user = message.text.split(" ")
-    print(data_from_user)
 
+    data_from_user = message.text.split(" ")
     holiday_name = " ".join(data_from_user[1:])
 
     if not holiday_name.strip():
@@ -287,6 +295,7 @@ async def get_today(message: types.Message):
 
 @dp.callback_query_handler(simple_cal_callback.filter())
 async def process_simple_calendar(callback_query: CallbackQuery, callback_data: dict):
+    """Utility function to run the calendar"""
     selected, date = await SimpleCalendar().process_selection(
         callback_query, callback_data
     )
@@ -308,6 +317,7 @@ async def process_simple_calendar(callback_query: CallbackQuery, callback_data: 
 
 
 async def add_birthday_to_db(chat_id, user, callback_query, date):
+    """Process adding birthday in the database"""
     table_name = "table_" + str(chat_id)
     # Retrieve the table object based on the table name
     table = Table(table_name, metadata, autoload_with=engine)
@@ -336,6 +346,7 @@ async def add_birthday_to_db(chat_id, user, callback_query, date):
 
 
 async def add_holiday_to_db(chat_id, holiday_name, callback_query, date):
+    """Process adding holiday in the database"""
     table_name = "table_" + str(chat_id)
     table = Table(table_name, metadata, autoload_with=engine)
 
@@ -365,6 +376,7 @@ async def add_holiday_to_db(chat_id, holiday_name, callback_query, date):
 
 
 def set_connection_and_return_args():
+    """Connect with the special API that generates image_url and text"""
     image_params = {"kitty": "True", "Sparkles": "False"}
     image_request = requests.get(
         "https://well-wisher.onrender.com/image?prompt=holiday&kitty=true&Sparkles=true",
@@ -385,6 +397,7 @@ def set_connection_and_return_args():
 
 
 async def send_birthday_congratulations():
+    """Send birthday congratulation in the chat"""
     today = ".".join(str(datetime.date.today()).split("-")[1:])
 
     tables = INSPECTOR.get_table_names()
@@ -423,12 +436,12 @@ async def send_birthday_congratulations():
                         )
 
                         total_congratulation = (
-                            holiday_message
-                            + "\n"
-                            + random_text
-                            + "\n"
-                            + "\n"
-                            + random_image_hyperlink
+                                holiday_message
+                                + "\n"
+                                + random_text
+                                + "\n"
+                                + "\n"
+                                + random_image_hyperlink
                         )
                         await bot.send_message(
                             chat_id, total_congratulation, parse_mode="Markdown"
@@ -443,6 +456,7 @@ async def send_birthday_congratulations():
 
 @dp.message_handler(content_types="web_app_data")
 async def get_data(web_app_message):
+    """Get sent data from WebApp"""
     data = web_app_message["web_app_data"]["data"]
     data_json = json.loads(data)
     image_url = data_json["picture_src"]
@@ -460,6 +474,7 @@ async def get_data(web_app_message):
 
 
 def register_handlers(dp: Dispatcher):
+    """The list of all handlers"""
     dp.register_message_handler(start, commands="start")
     dp.register_message_handler(start_handler, commands="start_chat")
     dp.register_message_handler(add_birthday, commands="add_birthday")

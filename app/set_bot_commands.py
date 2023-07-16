@@ -2,6 +2,7 @@ from aiogram import types
 
 
 async def set_default_commands(dp):
+    """List of default commands that appears when '/' is typed"""
     await dp.bot.set_my_commands(
         [
             types.BotCommand("start", "Start the dialog with the bot"),
